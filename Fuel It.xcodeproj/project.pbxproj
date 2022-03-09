@@ -14,6 +14,9 @@
 		AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9A27D9111F00EBB37B /* Persistence.swift */; };
 		AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */; };
 		AFB8ADA727D9118300EBB37B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB8ADA627D9118300EBB37B /* HealthKit.framework */; };
+		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
+		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
+		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AFB8AD9D27D9111F00EBB37B /* Fuel_It.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fuel_It.xcdatamodel; sourceTree = "<group>"; };
 		AFB8ADA427D9118300EBB37B /* Fuel It.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fuel It.entitlements"; sourceTree = "<group>"; };
 		AFB8ADA627D9118300EBB37B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		AFB8ADA827D9194300EBB37B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				AFB8ADA427D9118300EBB37B /* Fuel It.entitlements */,
 				AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */,
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
+				AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */,
+				AFB8ADAA27D9453600EBB37B /* SettingsView.swift */,
+				AFB8ADA827D9194300EBB37B /* HomeView.swift */,
 				AFB8AD9527D9111F00EBB37B /* Assets.xcassets */,
 				AFB8AD9A27D9111F00EBB37B /* Persistence.swift */,
 				AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */,
@@ -157,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */,
 				AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
+				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
+				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

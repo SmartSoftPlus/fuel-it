@@ -11,12 +11,18 @@ import CoreData
 struct ContentView: View {
 
     var body: some View {
-        Label("Test", systemImage: "book.fill")
-            .font(.system(size: 56))
+        TabView {
+            HomeView()
+                .tabItem {Label("Home", systemImage: "house.fill")}
+            NearbyView()
+                .tabItem({Label("Best fuel deals", systemImage: "giftcard.fill")})
+            SettingsView()
+                .tabItem({Label("Settings", systemImage: "gear.circle.fill")})
+            }
         }
+    
     }
 
-   
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
