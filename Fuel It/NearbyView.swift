@@ -9,7 +9,19 @@ import SwiftUI
 
 struct NearbyView: View {
     var body: some View {
-        Text("This is nearby view")
+        NavigationView {
+            List {
+                        HStack {
+                            Label("", systemImage: "bolt.car.circle.fill")
+                            Text("Orlen")
+                            Text("PB95")
+                            Text("6.80 PLN")
+                        }
+            }
+            .navigationTitle("Best deals")
+        }
+        
+        
     }
 }
 

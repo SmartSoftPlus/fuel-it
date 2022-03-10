@@ -17,6 +17,7 @@
 		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
+		AFB8ADB027DA622A00EBB37B /* PostgresNIO in Frameworks */ = {isa = PBXBuildFile; productRef = AFB8ADAF27DA622A00EBB37B /* PostgresNIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB8ADB027DA622A00EBB37B /* PostgresNIO in Frameworks */,
 				AFB8ADA727D9118300EBB37B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +114,9 @@
 			dependencies = (
 			);
 			name = "Fuel It";
+			packageProductDependencies = (
+				AFB8ADAF27DA622A00EBB37B /* PostgresNIO */,
+			);
 			productName = "Fuel It";
 			productReference = AFB8AD8E27D9111F00EBB37B /* Fuel It.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +145,9 @@
 				Base,
 			);
 			mainGroup = AFB8AD8527D9111F00EBB37B;
+			packageReferences = (
+				AFB8ADAE27DA622A00EBB37B /* XCRemoteSwiftPackageReference "postgres-nio" */,
+			);
 			productRefGroup = AFB8AD8F27D9111F00EBB37B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,6 +315,7 @@
 				DEVELOPMENT_TEAM = FFX3AHD54N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby petrol stations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +346,7 @@
 				DEVELOPMENT_TEAM = FFX3AHD54N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby petrol stations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFB8ADAE27DA622A00EBB37B /* XCRemoteSwiftPackageReference "postgres-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/postgres-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFB8ADAF27DA622A00EBB37B /* PostgresNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB8ADAE27DA622A00EBB37B /* XCRemoteSwiftPackageReference "postgres-nio" */;
+			productName = PostgresNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */ = {
