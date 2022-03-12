@@ -13,11 +13,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             HomeView()
-                .tabItem {Label("Home", systemImage: "house.fill")}
+                .tabItem {Label(NSLocalizedString("Home", comment: "Homepage"), systemImage: "house.fill")}
             NearbyView()
-                .tabItem({Label("Best fuel deals", systemImage: "giftcard.fill")})
+                .tabItem({Label(NSLocalizedString("Best fuel deals", comment: "Best fuel deals view button"), systemImage: "giftcard.fill")})
             SettingsView()
-                .tabItem({Label("Settings", systemImage: "gear.circle.fill")})
+                .tabItem({Label(NSLocalizedString("Settings", comment: "Settings button view"), systemImage: "gear.circle.fill")})
             }
         
         }

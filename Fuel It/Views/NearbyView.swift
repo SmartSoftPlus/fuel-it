@@ -18,7 +18,7 @@ struct NearbyView: View {
                             Text("6.80 PLN")
                         }
             }
-            .navigationTitle("Best deals")
+            .navigationTitle(NSLocalizedString("Best deals", comment: "The best deals for fuel in the nearby"))
         }
         
         
