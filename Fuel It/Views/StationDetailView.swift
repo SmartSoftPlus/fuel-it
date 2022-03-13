@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StationDetailView: View {
     
-    var station: PetrolStation
+    @State var station: PetrolStation
     @State var showHome = false
     
     var body: some View {
@@ -18,9 +18,9 @@ struct StationDetailView: View {
                 VStack {
                     Text(station.brand)
                         .bold()
-                        .font(.system(size: 36))
+                        .font(.system(size: 20))
                     Text(station.description)
-                    if station.checkFuelPricesOnServer() {
+                    if true {
                         if station.availibleFuels[0] {
                             HStack {
                                 Text(String(station.pb95))

@@ -16,7 +16,9 @@ struct EditFuelPricesView: View {
     var body: some View {
         VStack {
             TextField(NSLocalizedString("PB95 price", comment: "PB95 fuel price"), value: $pb95Price, format: .number)
+                .keyboardType(.decimalPad)
             TextField(NSLocalizedString("Oil price", comment: "Oil fuel price"), value: $oilPrice, format: .number)
+                .keyboardType(.decimalPad)
             Button(NSLocalizedString("Submit", comment: "Submit an action")) {
                 var hasChanged = false
                 if pb95Price > 0.0 {

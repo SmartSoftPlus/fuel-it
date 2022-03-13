@@ -12,6 +12,7 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State var showNextView = false
     @State var actualStation: PetrolStation?
+    @State var stationID = 0
     
     var body: some View {
         if !showNextView {
@@ -20,7 +21,11 @@ struct HomeView: View {
                         MapAnnotation(coordinate: item.locationCords) {
                             Button(action: {
                                 print(item.locationCords)
+                                print(item.pb95)
                                 actualStation = item
+                                stationID = item.id
+//                                var fuelPrices = petrolStations[item.id - 1].checkFuelPricesOnServer()
+                                getFuelPrice(id: item.id)
                                 showNextView = true
                                 
                             }) {
@@ -39,7 +44,7 @@ struct HomeView: View {
                         }
         }
         else {
-            StationDetailView(station: actualStation!)
+            StationDetailView(station: petrolStations[stationID - 1])
         }   
     }
 }
