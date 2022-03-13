@@ -32,6 +32,8 @@
 		AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */; };
 		AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */; };
 		AFE7E28527DD288500D1EF15 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28427DD288500D1EF15 /* ReadData.swift */; };
+		AFE7E28827DD341C00D1EF15 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E28727DD341C00D1EF15 /* data.txt */; };
+		AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
 		AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailView.swift; sourceTree = "<group>"; };
 		AFE7E28427DD288500D1EF15 /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
+		AFE7E28727DD341C00D1EF15 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.txt; path = ../../data.txt; sourceTree = "<group>"; };
+		AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFuelPricesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		AFB8AD9027D9111F00EBB37B /* Fuel It */ = {
 			isa = PBXGroup;
 			children = (
+				AFE7E28727DD341C00D1EF15 /* data.txt */,
 				AFE7E28627DD289500D1EF15 /* Resources */,
 				AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */,
 				AFE7E26327DCB24D00D1EF15 /* Views */,
@@ -137,6 +142,7 @@
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
 				AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */,
 				AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */,
+				AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */,
 				AFB8ADAA27D9453600EBB37B /* SettingsView.swift */,
 				AFB8ADA827D9194300EBB37B /* HomeView.swift */,
 			);
@@ -236,6 +242,7 @@
 				AFB8AD9927D9111F00EBB37B /* Preview Assets.xcassets in Resources */,
 				AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */,
 				AFE7E25427DA9C9E00D1EF15 /* Fuel It Localizations in Resources */,
+				AFE7E28827DD341C00D1EF15 /* data.txt in Resources */,
 				AFE7E25727DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings in Resources */,
 				AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */,
 			);
@@ -255,6 +262,7 @@
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
+				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,

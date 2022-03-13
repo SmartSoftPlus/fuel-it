@@ -10,15 +10,37 @@ import MapKit
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
+    @State var showNextView = false
+    @State var actualStation: PetrolStation?
     
     var body: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-            .ignoresSafeArea(edges: .top)
-            .onAppear {
-                viewModel.checkIfLocationEnabled()
-            }
-            
-        
+        if !showNextView {
+            Map(coordinateRegion: .constant(viewModel.region), interactionModes: .all, showsUserLocation: true, annotationItems: petrolStations) {
+                        item in
+                        MapAnnotation(coordinate: item.locationCords) {
+                            Button(action: {
+                                print(item.locationCords)
+                                actualStation = item
+                                showNextView = true
+                                
+                            }) {
+                                Image(systemName: "mappin.and.ellipse")
+                                    .scaleEffect(2.0)
+                                    .foregroundColor(.red)
+                                    .padding()
+                            }
+                            .background(Circle())
+                            .foregroundColor(Color.clear)
+                        }
+                    }
+                        .ignoresSafeArea(edges: .top)
+                        .onAppear {
+                            viewModel.checkIfLocationEnabled()
+                        }
+        }
+        else {
+            StationDetailView(station: actualStation!)
+        }   
     }
 }
 

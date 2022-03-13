@@ -27,6 +27,7 @@ class Fuel_ItAppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         FirebaseApp.configure()
+        let db = Firestore.firestore()
         return true
     }
 }
