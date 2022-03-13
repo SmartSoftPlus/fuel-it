@@ -14,35 +14,44 @@ struct StationDetailView: View {
     
     var body: some View {
         if !showHome {
-            VStack {
-                Button {
-                    showHome = true
-                } label: {
-                    Text("Back")
-                }
-
-                        Text(station.brand)
-                            .bold()
-                            .font(.system(size: 36))
-                        Text(station.description)
-                        if station.checkFuelPricesOnServer() {
-                            if station.availibleFuels[0] {
-                                            HStack {
-                                                Text(String(station.pb95))
-                                            }
-                                        }
-                                        if station.availibleFuels[2] {
-                                            HStack {
-                                                Text(String(station.oil))
-                                            }
-                                        }
+            NavigationView {
+                VStack {
+                    Text(station.brand)
+                        .bold()
+                        .font(.system(size: 36))
+                    Text(station.description)
+                    if station.checkFuelPricesOnServer() {
+                        if station.availibleFuels[0] {
+                            HStack {
+                                Text(String(station.pb95))
+                            }
                         }
-                        NavigationView {
-                            NavigationLink(destination: EditFuelPricesView(station: station)) {
-                                Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
+                        if station.availibleFuels[2] {
+                            HStack {
+                                Text(String(station.oil))
                             }
                         }
                     }
+                    NavigationView {
+                        NavigationLink(destination: EditFuelPricesView(station: station)) {
+                            Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
+                        }
+                    }
+                }
+                .padding()
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            showHome = true
+                        } label: {
+                            Text("Back")
+                                .multilineTextAlignment(.leading)
+                        }
+                    }
+                    
+                }
+            }
+            
         }
         else {
             HomeView()

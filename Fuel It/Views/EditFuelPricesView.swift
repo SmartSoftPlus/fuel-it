@@ -33,6 +33,7 @@ struct EditFuelPricesView: View {
                 NavigationLink(destination: StationDetailView(station: station)) {EmptyView()}
             }
         }
+        .padding()
         
     }
 }
