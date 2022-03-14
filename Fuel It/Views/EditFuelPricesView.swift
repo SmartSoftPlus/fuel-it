@@ -32,7 +32,6 @@ struct EditFuelPricesView: View {
                 if hasChanged {
                     station.updatePricesOnServer()
                 }
-                NavigationLink(destination: StationDetailView(station: station)) {EmptyView()}
             }
         }
         .padding()

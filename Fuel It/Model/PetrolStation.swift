@@ -29,6 +29,8 @@ struct PetrolStation: Identifiable, Codable  {
     var pb95: Double
     var pb98: Double
     
+    var howFarFromUser: Double = 0.0
+    
     func updatePricesOnServer() -> Bool {
         Firestore.firestore().collection("stations").document(String(id)).setData([
             "pb95": pb95,
@@ -53,25 +55,25 @@ func getFuelPrice(id: Int) {
             if let price = data!["pb95"] as? Double {
                 if price > 0.0 {
                     print(price)
-                    petrolStations[id - 1].pb95 = price
+                    petrolStations[findArrayItem(petrolStationID: id)].pb95 = price
                 }
             }
             if let price = data!["pb98"] as? Double {
                 if price > 0.0 {
 //                    pb98Price = price
-                    petrolStations[id - 1].pb98 = price
+                    petrolStations[findArrayItem(petrolStationID: id)].pb98 = price
                 }
             }
             if let price = data!["oil"] as? Double {
                 if price > 0.0 {
 //                    motorOilPrice = price
-                    petrolStations[id - 1].oil = price
+                    petrolStations[findArrayItem(petrolStationID: id)].oil = price
                 }
             }
             if let price = data!["lpg"] as? Double {
                 if price > 0.0 {
 //                    lpgPrice = price
-                    petrolStations[id - 1].lpg = price
+                    petrolStations[findArrayItem(petrolStationID: id)].lpg = price
                 }
             }
         }

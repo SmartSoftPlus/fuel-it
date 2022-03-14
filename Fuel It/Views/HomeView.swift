@@ -24,8 +24,6 @@ struct HomeView: View {
                                 print(item.pb95)
                                 actualStation = item
                                 stationID = item.id
-//                                var fuelPrices = petrolStations[item.id - 1].checkFuelPricesOnServer()
-                                getFuelPrice(id: item.id)
                                 showNextView = true
                                 
                             }) {
@@ -41,10 +39,13 @@ struct HomeView: View {
                         .ignoresSafeArea(edges: .top)
                         .onAppear {
                             viewModel.checkIfLocationEnabled()
+                            for petrolStation in petrolStations {
+                                getFuelPrice(id: petrolStation.id)
+                            }
                         }
         }
         else {
-            StationDetailView(station: petrolStations[stationID - 1])
+            StationDetailView(station: petrolStations[findArrayItem(petrolStationID: stationID)])
         }   
     }
 }
@@ -53,6 +54,17 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
+}
+
+func findArrayItem(petrolStationID: Int) -> Int{
+    var i = 0
+    for station in petrolStations {
+        if station.id == petrolStationID {
+            return i
+        }
+        i += 1
+    }
+    return 3000
 }
 
 final class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {

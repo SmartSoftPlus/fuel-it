@@ -16,6 +16,7 @@
 		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
+		AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */; };
 		AFE7E25427DA9C9E00D1EF15 /* Fuel It Localizations in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25327DA9C9E00D1EF15 /* Fuel It Localizations */; };
 		AFE7E25727DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25527DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings */; };
 		AFE7E25A27DA9CDA00D1EF15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25827DA9CDA00D1EF15 /* Localizable.strings */; };
@@ -49,6 +50,7 @@
 		AFB8ADA827D9194300EBB37B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveStationViewModel.swift; sourceTree = "<group>"; };
 		AFE7E25327DA9C9E00D1EF15 /* Fuel It Localizations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Fuel It Localizations"; sourceTree = "<group>"; };
 		AFE7E25627DA9CDA00D1EF15 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "pl.lproj/Fuel It-InfoPlist.strings"; sourceTree = "<group>"; };
 		AFE7E25927DA9CDA00D1EF15 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */,
+				AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */,
 				AFE7E28427DD288500D1EF15 /* ReadData.swift */,
 			);
 			path = Model;
@@ -263,6 +266,7 @@
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
+				AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,

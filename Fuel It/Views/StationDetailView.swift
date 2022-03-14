@@ -37,7 +37,6 @@ struct StationDetailView: View {
                             Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
                         }
                     }
-                }
                 .padding()
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -47,6 +46,7 @@ struct StationDetailView: View {
                             Text("Back")
                                 .multilineTextAlignment(.leading)
                         }
+                    }
                     }
                     
                 }

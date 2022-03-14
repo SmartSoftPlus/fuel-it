@@ -1,3 +1,6 @@
+/* No comment provided by engineer. */
+"Back" = "Wstecz";
+
 /* The best deals for fuel in the nearby */
 "Best deals" = "Okazje";
 
@@ -10,7 +13,19 @@
 /* Homepage */
 "Home" = "Strona główna";
 
+/* Oil fuel price */
+"Oil price" = "Cena ON";
+
+/* PB95 fuel price */
+"PB95 price" = "Cena PB95";
+
 /* Settings button view
    Settings panel name */
 "Settings" = "Ustawienia";
+
+/* Submit an action */
+"Submit" = "Zatwierdź";
+
+/* Update fuel prices button */
+"Update fuel prices" = "Zaktualizuj ceny";
 
