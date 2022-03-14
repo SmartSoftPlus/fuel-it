@@ -32,11 +32,11 @@ struct StationDetailView: View {
                             }
                         }
                     }
-                    NavigationView {
                         NavigationLink(destination: EditFuelPricesView(station: station)) {
                             Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
                         }
-                    }
+                        .padding()
+                    Spacer()
                 .padding()
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {

@@ -90,7 +90,7 @@ final class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate
         case .restricted, .denied:
             print("restricted or denied")
         case .authorizedAlways, .authorizedWhenInUse:
-            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
             print(locationManager.location?.coordinate ?? "")
         @unknown default:
             break
