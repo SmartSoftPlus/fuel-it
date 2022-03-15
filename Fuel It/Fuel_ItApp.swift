@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
+import MapKit
 
 @main
 struct Fuel_ItApp: App {
+    @UIApplicationDelegateAdaptor var delegate: Fuel_ItAppDelegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
@@ -16,5 +19,17 @@ struct Fuel_ItApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+    }
+}
+
+class Fuel_ItAppDelegate: NSObject, UIApplicationDelegate {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+    ) -> Bool {
+        FirebaseApp.configure()
+        let startingLocation = CLLocationManager().location?.coordinate
+        let db = Firestore.firestore()
+        return true
     }
 }

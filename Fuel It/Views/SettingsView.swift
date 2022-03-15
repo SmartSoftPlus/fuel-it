@@ -11,9 +11,9 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("Donate us 1$!")
+                Text(NSLocalizedString("Donate us 1$!", comment: "Asking for small donate"))
             }
-            .navigationTitle("Settings")
+            .navigationTitle(NSLocalizedString("Settings", comment: "Settings panel name"))
         }
     }
 }
