@@ -15,18 +15,11 @@ struct HomeView: View {
     @State var stationID = 0
     
     var body: some View {
-        if !showNextView {
+            NavigationView {
             Map(coordinateRegion: .constant(viewModel.region), interactionModes: .all, showsUserLocation: true, annotationItems: petrolStations) {
                         item in
                         MapAnnotation(coordinate: item.locationCords) {
-                            Button(action: {
-                                print(item.locationCords)
-                                print(item.pb95)
-                                actualStation = item
-                                stationID = item.id
-                                showNextView = true
-                                
-                            }) {
+                            NavigationLink(destination: StationDetailView(station: petrolStations[findArrayItem(petrolStationID: item.id)])){
                                 Image(systemName: "mappin.and.ellipse")
                                     .scaleEffect(2.0)
                                     .foregroundColor(.red)
@@ -43,10 +36,7 @@ struct HomeView: View {
                                 getFuelPrice(id: petrolStation.id)
                             }
                         }
-        }
-        else {
-            StationDetailView(station: petrolStations[findArrayItem(petrolStationID: stationID)])
-        }   
+            }
     }
 }
 
