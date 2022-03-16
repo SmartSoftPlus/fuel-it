@@ -13,7 +13,6 @@ struct StationDetailView: View {
     @State var showHome = false
     
     var body: some View {
-        if !showHome {
             NavigationView {
                 VStack {
                     Text(station.brand)
@@ -38,24 +37,9 @@ struct StationDetailView: View {
                         .padding()
                     Spacer()
                 .padding()
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            showHome = true
-                        } label: {
-                            Text("Back")
-                                .multilineTextAlignment(.leading)
-                        }
-                    }
-                    }
                     
                 }
             }
-            
-        }
-        else {
-            HomeView()
-        }
         
     }
 }
