@@ -19,27 +19,31 @@ struct StationDetailView: View {
                         .bold()
                         .font(.system(size: 20))
                     Text(station.description)
-                    if true {
-                        if station.availibleFuels[0] {
-                            HStack {
-                                Text(String(station.pb95))
-                            }
-                        }
-                        if station.availibleFuels[2] {
-                            HStack {
-                                Text(String(station.oil))
-                            }
-                        }
+                    List {
+                        HStack {
+                                                        Label(LocalizedStringKey(String(station.pb95) + " PLN"), systemImage: "fuelpump.fill").accentColor(.green)
+                                                    }
+                                                    HStack {
+                                                        Label(LocalizedStringKey(String(station.oil) + " PLN"), systemImage: "fuelpump.fill").accentColor(.black)
+                                                    }
+                                            HStack {
+                                                Label(LocalizedStringKey(String(station.pb98) + " PLN"), systemImage: "fuelpump.fill").accentColor(.mint)
+                                            }
+                                            HStack {
+                                                Label(LocalizedStringKey(String(station.lpg) + " PLN"), systemImage: "fuelpump.fill").accentColor(.blue)
+                                            }
                     }
-                        NavigationLink(destination: EditFuelPricesView(station: station)) {
-                            Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
-                        }
-                        .padding()
-                    Spacer()
                 .padding()
                     
                 }
+                
             }
+            .toolbar {
+                NavigationLink(destination: EditFuelPricesView(station: station)) {
+                    Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
+                }
+            }
+        Spacer()
         
     }
 }
