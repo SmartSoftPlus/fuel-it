@@ -30,12 +30,12 @@ struct HomeView: View {
                         }
                     }
                         .ignoresSafeArea(edges: .top)
-                        .onAppear {
+                        .onAppear(perform: {
                             viewModel.checkIfLocationEnabled()
                             for petrolStation in petrolStations {
                                 getFuelPrice(id: petrolStation.id)
                             }
-                        }
+                        })
             }
     }
 }

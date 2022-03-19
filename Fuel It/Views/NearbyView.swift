@@ -17,7 +17,7 @@ struct NearbyView: View {
                 if bestDeals.count == 4 {
                     if bestDeals[0].pb95 > 0.0 {
                                         HStack {
-                                            Label("", systemImage: "bolt.car.circle.fill")
+                                            Label("", systemImage: "fuelpump.fill").accentColor(.green)
                                             Text(bestDeals[0].brand)
                                             Text("PB95")
                                             Text(String(bestDeals[0].pb95))
@@ -26,7 +26,7 @@ struct NearbyView: View {
                                     }
                     if bestDeals[1].pb98 > 0.0 {
                                         HStack {
-                                            Label("", systemImage: "bolt.car.circle.fill")
+                                            Label("", systemImage: "fuelpump.fill").accentColor(.mint)
                                             Text(bestDeals[1].brand)
                                             Text("PB98")
                                             Text(String(bestDeals[1].pb98))
@@ -35,7 +35,7 @@ struct NearbyView: View {
                                     }
                     if bestDeals[2].oil > 0.0 {
                                         HStack {
-                                            Label("", systemImage: "bolt.car.circle.fill")
+                                            Label("", systemImage: "fuelpump.fill").accentColor(.black)
                                             Text(bestDeals[2].brand)
                                             Text("ON")
                                             Text(String(bestDeals[2].oil))
@@ -44,7 +44,7 @@ struct NearbyView: View {
                                     }
                     if bestDeals[3].lpg > 0.0 {
                                         HStack {
-                                            Label("", systemImage: "bolt.car.circle.fill")
+                                            Label("", systemImage: "fuelpump.fill").accentColor(.blue)
                                             Text(bestDeals[3].brand)
                                             Text("LPG")
                                             Text(String(bestDeals[3].lpg))

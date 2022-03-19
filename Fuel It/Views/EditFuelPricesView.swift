@@ -66,7 +66,7 @@ struct EditFuelPricesView: View {
             }
         }
         .padding()
-        
+        Spacer()
     }
 }
 
