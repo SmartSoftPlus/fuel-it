@@ -7,10 +7,13 @@
 
 import SwiftUI
 import CoreData
+import MapKit
 
 struct ContentView: View {
-
+    @Environment(\.scenePhase) var scenePhase
+    @ObservedObject var notificationManager = LocalNotificationManager()
     var body: some View {
+        
         TabView {
             HomeView()
                 .tabItem {Label(NSLocalizedString("Home", comment: "Homepage"), systemImage: "house.fill")}
@@ -18,6 +21,14 @@ struct ContentView: View {
                 .tabItem({Label(NSLocalizedString("Best fuel deals", comment: "Best fuel deals view button"), systemImage: "giftcard.fill")})
             SettingsView()
                 .tabItem({Label(NSLocalizedString("Settings", comment: "Settings button view"), systemImage: "gear.circle.fill")})
+            
+                .onChange(of: scenePhase) { newPhase in
+                    if newPhase == .background {
+                        let bestStationsInTheNearby = getBestPricesInNearby()
+                        let chosenFuel = getFuelType()
+                        notificationManager.sendNotification(title: "Station", subtitle: nil, body: getProperStationName(bestStationsInTheNearby[chosenFuel]), coords: bestStationsInTheNearby[chosenFuel].locationCords)
+                    }
+                }
             }
         
         }

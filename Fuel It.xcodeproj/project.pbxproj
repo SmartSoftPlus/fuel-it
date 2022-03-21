@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		AFE7E28327DD286D00D1EF15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */,
 				AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */,
 				AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */,
 				AFE7E28427DD288500D1EF15 /* ReadData.swift */,
@@ -263,6 +266,7 @@
 				AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */,
 				AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
+				AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */,
 				AFE7E28527DD288500D1EF15 /* ReadData.swift in Sources */,
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
