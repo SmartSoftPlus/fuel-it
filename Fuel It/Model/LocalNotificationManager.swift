@@ -34,7 +34,7 @@ class LocalNotificationManager: ObservableObject {
             let attachment = try! UNNotificationAttachment(identifier: imageName, url: imageURL, options: .none)
             content.attachments = [attachment]
         
-            let trigger = UNLocationNotificationTrigger(region: CLCircularRegion(center: coords, radius: 500.0, identifier: "bestDealStation"), repeats: false)
+            let trigger = UNLocationNotificationTrigger(region: CLCircularRegion(center: coords, radius: 2000.0, identifier: "bestDealStation"), repeats: true)
             let request = UNNotificationRequest(identifier: "petrolInTheNearby", content: content, trigger: trigger)
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         }

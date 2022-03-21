@@ -38,26 +38,29 @@ struct PetrolStation: Identifiable, Codable  {
         docRef.getDocument { document, err in
             if let document = document, document.exists {
                 let data = document.data()
+                var mkrs = 0
                 if var marks = data!["notExistMarks"] as? Int {
                     if marks > 0 {
-                        
+                        mkrs = marks
                     }
                     else {
                         marks = 0
                     }
-                        Firestore.firestore().collection("stations").document(String(id)).setData([
-                            "pb95": pb95,
-                            "pb98": pb98,
-                            "oil": oil,
-                            "lpg": lpg,
-                            "notExistMarks": marks,
-                        ]) { err in
-                            if let err = err {
-                                print(err)
-                            }
                         
                     }
+                Firestore.firestore().collection("stations").document(String(id)).setData([
+                    "pb95": pb95,
+                    "pb98": pb98,
+                    "oil": oil,
+                    "lpg": lpg,
+                    "notExistMarks": mkrs,
+                ]) { err in
+                    if let err = err {
+                        print(err)
+                    }
+                
                 }
+            
             }
             else {
                 Firestore.firestore().collection("stations").document(String(id)).setData([
@@ -71,6 +74,7 @@ struct PetrolStation: Identifiable, Codable  {
                         print(err)
                     }
             }
+            
         }
         }
         return true

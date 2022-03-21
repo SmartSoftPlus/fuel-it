@@ -24,8 +24,10 @@ struct ContentView: View {
             
                 .onChange(of: scenePhase) { newPhase in
                     if newPhase == .background {
+                        print("AAA")
                         let bestStationsInTheNearby = getBestPricesInNearby()
                         let chosenFuel = getFuelType()
+                        print(chosenFuel, bestStationsInTheNearby)
                         notificationManager.sendNotification(title: "Station", subtitle: nil, body: getProperStationName(bestStationsInTheNearby[chosenFuel]), coords: bestStationsInTheNearby[chosenFuel].locationCords)
                     }
                 }
