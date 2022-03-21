@@ -15,7 +15,7 @@ struct StationDetailView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text(station.brand)
+                Text(getProperStationName(station))
                     .bold()
                     .font(.system(size: 20))
                 Text(station.description)

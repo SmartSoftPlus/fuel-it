@@ -29,18 +29,49 @@ struct PetrolStation: Identifiable, Codable  {
     var pb95: Double
     var pb98: Double
     
+    var markedAsUnavailible: Int = 0
+    
     var howFarFromUser: Double = 0.0
     
     func updatePricesOnServer() -> Bool {
-        Firestore.firestore().collection("stations").document(String(id)).setData([
-            "pb95": pb95,
-            "pb98": pb98,
-            "oil": oil,
-            "lpg": lpg
-        ]) { err in
-            if let err = err {
-                print(err)
+        let docRef = Firestore.firestore().collection("stations").document(String(id))
+        docRef.getDocument { document, err in
+            if let document = document, document.exists {
+                let data = document.data()
+                if var marks = data!["notExistMarks"] as? Int {
+                    if marks > 0 {
+                        
+                    }
+                    else {
+                        marks = 0
+                    }
+                        Firestore.firestore().collection("stations").document(String(id)).setData([
+                            "pb95": pb95,
+                            "pb98": pb98,
+                            "oil": oil,
+                            "lpg": lpg,
+                            "notExistMarks": marks,
+                        ]) { err in
+                            if let err = err {
+                                print(err)
+                            }
+                        
+                    }
+                }
             }
+            else {
+                Firestore.firestore().collection("stations").document(String(id)).setData([
+                    "pb95": pb95,
+                    "pb98": pb98,
+                    "oil": oil,
+                    "lpg": lpg,
+                    "notExistMarks": 0,
+                ]) { err in
+                    if let err = err {
+                        print(err)
+                    }
+            }
+        }
         }
         return true
     }
@@ -76,6 +107,93 @@ func getFuelPrice(id: Int) {
                     petrolStations[findArrayItem(petrolStationID: id)].lpg = price
                 }
             }
+            if let marks = data!["notExistMarks"] as? Int {
+                if marks > 0 {
+//                    lpgPrice = price
+                    petrolStations[findArrayItem(petrolStationID: id)].markedAsUnavailible = marks
+                }
+                else {
+                    petrolStations[findArrayItem(petrolStationID: id)].markedAsUnavailible = 0
+                }
+                writeMarksLocally(id: id)
+            }
+        }
+    }
+}
+
+func getMarks(id: Int) -> Int {
+    var retVal = 0
+    let docRef = Firestore.firestore().collection("stations").document(String(id))
+    docRef.getDocument { document, err in
+        if let document = document, document.exists {
+            let data = document.data()
+            if let marks = data!["notExistMarks"] as? Int {
+                if marks > 0 {
+                    retVal = marks
+                }
+            }
+        }
+    }
+    return retVal
+}
+
+
+func retrieveMarks(id: Int) {
+    let docRef = Firestore.firestore().collection("stations").document(String(id))
+    docRef.getDocument { document, err in
+        if let document = document, document.exists {
+            let data = document.data()
+            if let marks = data!["notExistMarks"] as? Int {
+                updateMarks(amount: marks + 1, id: id)
+                petrolStations[findArrayItem(petrolStationID: id)].markedAsUnavailible = marks + 1
+            }
+            else {
+                updateMarks(amount: 1, id: id)
+                petrolStations[findArrayItem(petrolStationID: id)].markedAsUnavailible = 1
+            }
+            writeMarksLocally(id: id)
+        }
+    }
+}
+
+func writeMarksLocally(id: Int) {
+    var itemToWrite = ""
+    let filePath = getDocumentsDirectory().appendingPathComponent("marks.txt")
+    var data: String?
+    do {
+        data = try String(contentsOf: filePath)
+    }
+    catch {
+        
+    }
+    if let docData = data {
+        let fileLines = docData.components(separatedBy: .newlines)
+        for singleLine in fileLines {
+            var lineContents = singleLine.components(separatedBy: ";")
+            if Int(lineContents[0]) == id {
+                lineContents[1] = String(petrolStations[findArrayItem(petrolStationID: id)].markedAsUnavailible)
+            }
+            print(lineContents)
+            if lineContents.count >= 2 {
+                itemToWrite += "\(lineContents[0]);\(lineContents[1])\n"
+            }
+        }
+    }
+    
+        do {
+            try itemToWrite.write(to: filePath, atomically: true, encoding: .utf8)
+        }
+        catch {
+            
+        }
+}
+
+func updateMarks(amount: Int, id: Int) {
+    Firestore.firestore().collection("stations").document(String(id)).updateData([
+        "notExistMarks": amount
+    ]) { err in
+        if let err = err {
+            print(err)
         }
     }
 }

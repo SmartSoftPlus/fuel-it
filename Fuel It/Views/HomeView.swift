@@ -20,8 +20,8 @@ struct HomeView: View {
                         item in
                         MapAnnotation(coordinate: item.locationCords) {
                             NavigationLink(destination: StationDetailView(station: petrolStations[findArrayItem(petrolStationID: item.id)])){
-                                Image(systemName: "mappin.and.ellipse")
-                                    .scaleEffect(2.0)
+                                Image(systemName: "fuelpump.fill")
+                                    .scaleEffect(1.0)
                                     .foregroundColor(.red)
                                     .padding()
                             }
@@ -37,6 +37,7 @@ struct HomeView: View {
                             }
                         })
             }
+            .navigationBarHidden(true)
     }
 }
 

@@ -20,15 +20,40 @@ func readFromFile() -> [PetrolStation] {
     let currUserPosition = CLLocationManager().location?.coordinate
     for singleLine in fileLines {
         let lineContents = singleLine.components(separatedBy: ";")
-        print(lineContents)
         let fromUserLength = getHowFarFromUser(lng: Double(lineContents[4]) ?? 0.0, lat: Double(lineContents[3]) ?? 0.0, currUserPosition: currUserPosition)
-        if fromUserLength >= 0.0 && fromUserLength < 0.3 {
-            let tmpStationObject: PetrolStation = PetrolStation(id: Int(lineContents[0]) ?? 0, brand: lineContents[1], description: "", availibleFuels: getFuels(lineContents[2]), cng: 0.0, electricity: 0.0, latitude: Double(lineContents[3]) ?? 0.0, longitude: Double(lineContents[4]) ?? 0.0, lpg: 0.0, oil: 0.0, pb95: 0.0, pb98: 0.0)
+        if fromUserLength >= 0.0 && fromUserLength < petrolStationsRange {
+            var tmpStationObject: PetrolStation = PetrolStation(id: Int(lineContents[0]) ?? 0, brand: lineContents[1], description: "", availibleFuels: getFuels(lineContents[2]), cng: 0.0, electricity: 0.0, latitude: Double(lineContents[3]) ?? 0.0, longitude: Double(lineContents[4]) ?? 0.0, lpg: 0.0, oil: 0.0, pb95: 0.0, pb98: 0.0)
+            let marks = getMarks(id: tmpStationObject.id)
+            let marksLocal = getLocalMarks(id: tmpStationObject.id)
+            tmpStationObject.markedAsUnavailible = marks
+            if marksLocal < 3 {
                     tmpStations.append(tmpStationObject)
+            }
         }
         
     }
     return tmpStations
+}
+
+func getLocalMarks(id: Int) -> Int {
+    let filePath = getDocumentsDirectory().appendingPathComponent("marks.txt")
+    var data: String?
+    do {
+        data = try String(contentsOf: filePath)
+    }
+    catch {
+        
+    }
+    if let docData = data {
+        let fileLines = docData.components(separatedBy: .newlines)
+        for singleLine in fileLines {
+            let lineContents = singleLine.components(separatedBy: ";")
+            if Int(lineContents[0]) == id {
+                return Int(lineContents[1])!
+            }
+        }
+    }
+    return 0
 }
 
 func getHowFarFromUser(lng: Double, lat: Double, currUserPosition: CLLocationCoordinate2D?) -> Double{

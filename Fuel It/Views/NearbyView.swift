@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct NearbyView: View {
     
@@ -18,37 +19,57 @@ struct NearbyView: View {
                     if bestDeals[0].pb95 > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.green)
-                                            Text(bestDeals[0].brand)
+                                            Text(getProperStationName(bestDeals[0]))
                                             Text("PB95")
                                             Text(String(bestDeals[0].pb95))
                                             Text("PLN")
+                                            Button {
+                                                openAppleMaps(bestDeals[0])
+                                            } label: {
+                                                Text(">")
+                                            }
                                         }
                                     }
                     if bestDeals[1].pb98 > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.mint)
-                                            Text(bestDeals[1].brand)
+                                            Text(getProperStationName(bestDeals[1]))
                                             Text("PB98")
                                             Text(String(bestDeals[1].pb98))
                                             Text("PLN")
+                                            Button {
+                                                openAppleMaps(bestDeals[1])
+                                            } label: {
+                                                Text(">")
+                                            }
                                         }
                                     }
                     if bestDeals[2].oil > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.black)
-                                            Text(bestDeals[2].brand)
+                                            Text(getProperStationName(bestDeals[2]))
                                             Text("ON")
                                             Text(String(bestDeals[2].oil))
                                             Text("PLN")
+                                            Button {
+                                                openAppleMaps(bestDeals[2])
+                                            } label: {
+                                                Text(">")
+                                            }
                                         }
                                     }
                     if bestDeals[3].lpg > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.blue)
-                                            Text(bestDeals[3].brand)
+                                            Text(getProperStationName(bestDeals[3]))
                                             Text("LPG")
                                             Text(String(bestDeals[3].lpg))
                                             Text("PLN")
+                                            Button {
+                                                openAppleMaps(bestDeals[3])
+                                            } label: {
+                                                Text(">")
+                                            }
                                         }
                                     }
                 }
@@ -65,6 +86,28 @@ struct NearbyView: View {
     
 }
 
+func openAppleMaps(_ station: PetrolStation) {
+    let placemark = MKPlacemark(coordinate: station.locationCords)
+    let mapItemToOpen = MKMapItem(placemark: placemark)
+    mapItemToOpen.name = station.brand
+    mapItemToOpen.openInMaps()
+}
+
+func getProperStationName(_ station: PetrolStation) -> String {
+    if station.brand.contains("ORLEN") {
+        return "Orlen"
+    }
+    if station.brand.contains("LUKOIL") {
+        return "Lukoil"
+    }
+    if station.brand.contains("SHELL") {
+        return "Shell"
+    }
+    if station.brand.contains("CIRCLE K") {
+        return "Circle K"
+    }
+    return station.brand
+}
 
 func getBestPricesInNearby() -> [PetrolStation] {
     var bestPrices = [Double]()
