@@ -16,7 +16,7 @@ func readFromFile() -> [PetrolStation] {
     let filePath = Bundle.main.path(forResource: "data", ofType: "txt")
     let data = try! String(contentsOfFile: filePath!)
     var fileLines = data.components(separatedBy: .newlines)
-    fileLines.popLast()
+    _ = fileLines.popLast()
     let currUserPosition = CLLocationManager().location?.coordinate
     for singleLine in fileLines {
         let lineContents = singleLine.components(separatedBy: ";")

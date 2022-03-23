@@ -12,7 +12,7 @@ import simd
 
 
 struct PetrolStation: Identifiable, Codable  {
-    let uniqueID = UUID()
+    var uniqueID = UUID()
     var id: Int
     var brand: String
     var description: String

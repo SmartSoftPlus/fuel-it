@@ -141,7 +141,9 @@ func getBestPricesInNearby() -> [PetrolStation] {
 
         }
         else {
-            fuelStations.append(petrolStations[0])
+            if petrolStations.count > 0 {
+                fuelStations.append(petrolStations[0])
+            }
         }
     }
     return fuelStations
