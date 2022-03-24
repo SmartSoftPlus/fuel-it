@@ -33,6 +33,21 @@ struct PetrolStation: Identifiable, Codable  {
     
     var howFarFromUser: Double = 0.0
     
+    func getProperFuelPrice(fuelType: Int) -> Double{
+        switch fuelType {
+        case 0:
+            return pb95
+        case 1:
+            return pb98
+        case 2:
+            return oil
+        case 3:
+            return lpg
+        default:
+            return pb95
+        }
+    }
+    
     func updatePricesOnServer() -> Bool {
         let docRef = Firestore.firestore().collection("stations").document(String(id))
         docRef.getDocument { document, err in
