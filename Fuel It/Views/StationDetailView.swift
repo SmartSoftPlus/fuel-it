@@ -13,35 +13,41 @@ struct StationDetailView: View {
     @State var showHome = false
     
     var body: some View {
-            NavigationView {
-                VStack {
-                    Text(station.brand)
-                        .bold()
-                        .font(.system(size: 20))
-                    Text(station.description)
-                    if true {
-                        if station.availibleFuels[0] {
-                            HStack {
-                                Text(String(station.pb95))
-                            }
-                        }
-                        if station.availibleFuels[2] {
-                            HStack {
-                                Text(String(station.oil))
-                            }
-                        }
+        NavigationView {
+            VStack {
+                Text(getProperStationName(station))
+                    .bold()
+                    .font(.system(size: 20))
+                Text(station.description)
+                List {
+                    HStack {
+                        Label(LocalizedStringKey(String(station.pb95) + " PLN"), systemImage: "fuelpump.fill").accentColor(.green)
                     }
-                        NavigationLink(destination: EditFuelPricesView(station: station)) {
-                            Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
-                        }
-                        .padding()
-                    Spacer()
-                .padding()
-                    
+                    HStack {
+                        Label(LocalizedStringKey(String(station.oil) + " PLN"), systemImage: "fuelpump.fill").accentColor(.black)
+                    }
+                    HStack {
+                        Label(LocalizedStringKey(String(station.pb98) + " PLN"), systemImage: "fuelpump.fill").accentColor(.mint)
+                    }
+                    HStack {
+                        Label(LocalizedStringKey(String(station.lpg) + " PLN"), systemImage: "fuelpump.fill").accentColor(.blue)
+                    }
                 }
+                .padding()
+                
             }
+            
+            
+        }
+        .toolbar {
+            NavigationLink(destination: EditFuelPricesView(station: station)) {
+                Text(NSLocalizedString("Update fuel prices", comment: "Update fuel prices button"))
+            }
+        }
+        Spacer()
         
     }
+    
 }
 
 //struct StationDetailView_Previews: PreviewProvider {
