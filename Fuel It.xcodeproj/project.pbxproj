@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */; };
+		AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC15E27ED0146002F7E7F /* AddStationView.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		AF0EC15E27ED0146002F7E7F /* AddStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationView.swift; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */,
 				AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */,
 				AFB8ADAA27D9453600EBB37B /* SettingsView.swift */,
+				AF0EC15E27ED0146002F7E7F /* AddStationView.swift */,
 				AFB8ADA827D9194300EBB37B /* HomeView.swift */,
 			);
 			path = Views;
@@ -272,6 +275,7 @@
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
+				AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */,
 				AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,

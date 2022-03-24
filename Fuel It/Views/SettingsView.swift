@@ -13,6 +13,7 @@ var maxRange = 1.0
 struct SettingsView: View {
     @State var sliderValue = petrolStationsRange
     @State var defaultFuel = getFuelType()
+    @State var showNavBar = true
     var body: some View {
         NavigationView {
             List {
@@ -35,7 +36,12 @@ struct SettingsView: View {
                                     }
                     Text("\(String(format: "%.0f", sliderValue * 111.2)) km")
                 }
-                Text("Add station")
+                NavigationLink(destination: {
+                    AddStationView()
+                }) {
+                    Text("Add station")
+                }
+                
                 Picker("Default fuel type", selection: $defaultFuel) {
                     Text("PB95").tag(0)
                     Text("PB98").tag(1)
@@ -46,6 +52,7 @@ struct SettingsView: View {
                     
             .navigationTitle(NSLocalizedString("Settings", comment: "Settings panel name"))
         }
+        .navigationBarHidden(true)
         .onDisappear() {
             //save fuel type to file
             let filePath = getDocumentsDirectory().appendingPathComponent("fuelPicker.txt")
