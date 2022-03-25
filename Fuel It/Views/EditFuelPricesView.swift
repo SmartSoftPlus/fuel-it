@@ -30,7 +30,7 @@ struct EditFuelPricesView: View {
                                 }
                     HStack {
                         Label("", systemImage: "fuelpump.fill").accentColor(.black)
-                        TextField(NSLocalizedString("Oil price", comment: "Oil fuel price"), value: $oilPrice, format: .number)
+                        TextField(NSLocalizedString("Diesel price", comment: "Oil fuel price"), value: $oilPrice, format: .number)
                                                         .keyboardType(.decimalPad)
                     }
                     HStack {

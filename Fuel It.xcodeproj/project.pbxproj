@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */; };
 		AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC15E27ED0146002F7E7F /* AddStationView.swift */; };
+		AF0EC16227EDDC24002F7E7F /* pl.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16127EDDC24002F7E7F /* pl.xcloc */; };
+		AF0EC16427EDDCB8002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16327EDDCB8002F7E7F /* en.xcloc */; };
+		AF0EC16727EDDD2C002F7E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16527EDDD2C002F7E7F /* Localizable.strings */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -19,9 +22,6 @@
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
 		AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */; };
-		AFE7E25427DA9C9E00D1EF15 /* Fuel It Localizations in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25327DA9C9E00D1EF15 /* Fuel It Localizations */; };
-		AFE7E25727DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25527DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings */; };
-		AFE7E25A27DA9CDA00D1EF15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E25827DA9CDA00D1EF15 /* Localizable.strings */; };
 		AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */; };
 		AFE7E26C27DCBA1E00D1EF15 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26B27DCBA1E00D1EF15 /* FirebaseAuth */; };
 		AFE7E26E27DCBA1E00D1EF15 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26D27DCBA1E00D1EF15 /* FirebaseDatabase */; };
@@ -42,6 +42,10 @@
 /* Begin PBXFileReference section */
 		AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		AF0EC15E27ED0146002F7E7F /* AddStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStationView.swift; sourceTree = "<group>"; };
+		AF0EC16127EDDC24002F7E7F /* pl.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = pl.xcloc; path = "Fuel It/Views/Fuel It Localizations/pl.xcloc"; sourceTree = "<group>"; };
+		AF0EC16327EDDCB8002F7E7F /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = en.xcloc; path = "Fuel It/Views/Fuel It Localizations/en.xcloc"; sourceTree = "<group>"; };
+		AF0EC16627EDDD2C002F7E7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF0EC16827EDDD5F002F7E7F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
@@ -56,9 +60,6 @@
 		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
 		AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveStationViewModel.swift; sourceTree = "<group>"; };
-		AFE7E25327DA9C9E00D1EF15 /* Fuel It Localizations */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Fuel It Localizations"; sourceTree = "<group>"; };
-		AFE7E25627DA9CDA00D1EF15 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "pl.lproj/Fuel It-InfoPlist.strings"; sourceTree = "<group>"; };
-		AFE7E25927DA9CDA00D1EF15 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AFE7E25B27DCB18C00D1EF15 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
@@ -91,8 +92,8 @@
 		AFB8AD8527D9111F00EBB37B = {
 			isa = PBXGroup;
 			children = (
-				AFE7E25827DA9CDA00D1EF15 /* Localizable.strings */,
-				AFE7E25527DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings */,
+				AF0EC16327EDDCB8002F7E7F /* en.xcloc */,
+				AF0EC16127EDDC24002F7E7F /* pl.xcloc */,
 				AFB8AD9027D9111F00EBB37B /* Fuel It */,
 				AFB8AD8F27D9111F00EBB37B /* Products */,
 				AFB8ADA527D9118300EBB37B /* Frameworks */,
@@ -111,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */,
+				AF0EC16527EDDD2C002F7E7F /* Localizable.strings */,
 				AFE7E28727DD341C00D1EF15 /* data.txt */,
 				AFE7E28627DD289500D1EF15 /* Resources */,
 				AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */,
@@ -121,7 +123,6 @@
 				AFB8AD9527D9111F00EBB37B /* Assets.xcassets */,
 				AFB8AD9A27D9111F00EBB37B /* Persistence.swift */,
 				AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */,
-				AFE7E25327DA9C9E00D1EF15 /* Fuel It Localizations */,
 				AFB8AD9727D9111F00EBB37B /* Preview Content */,
 			);
 			path = "Fuel It";
@@ -249,12 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE7E25A27DA9CDA00D1EF15 /* Localizable.strings in Resources */,
 				AFB8AD9927D9111F00EBB37B /* Preview Assets.xcassets in Resources */,
+				AF0EC16227EDDC24002F7E7F /* pl.xcloc in Resources */,
 				AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */,
-				AFE7E25427DA9C9E00D1EF15 /* Fuel It Localizations in Resources */,
+				AF0EC16727EDDD2C002F7E7F /* Localizable.strings in Resources */,
 				AFE7E28827DD341C00D1EF15 /* data.txt in Resources */,
-				AFE7E25727DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings in Resources */,
+				AF0EC16427EDDCB8002F7E7F /* en.xcloc in Resources */,
 				AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,20 +287,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFE7E25527DA9CDA00D1EF15 /* Fuel It-InfoPlist.strings */ = {
+		AF0EC16527EDDD2C002F7E7F /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AFE7E25627DA9CDA00D1EF15 /* pl */,
-			);
-			name = "Fuel It-InfoPlist.strings";
-			sourceTree = "<group>";
-		};
-		AFE7E25827DA9CDA00D1EF15 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFE7E25927DA9CDA00D1EF15 /* pl */,
+				AF0EC16627EDDD2C002F7E7F /* en */,
+				AF0EC16827EDDD5F002F7E7F /* pl */,
 			);
 			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

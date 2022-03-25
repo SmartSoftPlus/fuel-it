@@ -1,5 +1,5 @@
 /* No comment provided by engineer. */
-"Back" = "Wstecz";
+"Add station" = "Dodaj stację";
 
 /* The best deals for fuel in the nearby */
 "Best deals" = "Okazje";
@@ -7,25 +7,58 @@
 /* Best fuel deals view button */
 "Best fuel deals" = "Okazje";
 
-/* Asking for small donate */
-"Donate us 1$!" = "Wspomóż rozwój aplikacji";
+/* No comment provided by engineer. */
+"Brand" = "Marka";
+
+/* No comment provided by engineer. */
+"Default fuel type" = "Domyślny typ paliwa";
+
+/* No comment provided by engineer. */
+"Description" = "Opis";
+
+/* Oil fuel price */
+"Diesel price" = "Cena Diesla";
 
 /* Homepage */
 "Home" = "Strona główna";
 
-/* Oil fuel price */
-"Oil price" = "Cena ON";
+/* No comment provided by engineer. */
+"Let me check that" = "Już sprawdzam";
+
+/* LPG fuel price */
+"LPG price" = "Cena LPG";
+
+/* No comment provided by engineer. */
+"Mark as closed" = "Oznacz jako zamknięte";
 
 /* PB95 fuel price */
 "PB95 price" = "Cena PB95";
+
+/* PB98 fuel price */
+"PB98 price" = "Cena PB98";
 
 /* Settings button view
    Settings panel name */
 "Settings" = "Ustawienia";
 
+/* No comment provided by engineer. */
+"Something is missing in form" = "Czegoś tutaj brakuje";
+
+/* No comment provided by engineer. */
+"Station view radius" = "Promień wyszukiwania stacji";
+
 /* Submit an action */
 "Submit" = "Zatwierdź";
 
+/* No comment provided by engineer. */
+"Successfully added station! Thank you for contributing" = "Pomyślnie dodano stację! Dziękujemy za Twój wkład";
+
 /* Update fuel prices button */
 "Update fuel prices" = "Zaktualizuj ceny";
+
+/* No comment provided by engineer. */
+"Update prices" = "Zaktualizuj ceny";
+
+/* No comment provided by engineer. */
+"Buy us a gallon of petrol" = "Kup nam litr paliwa!";
 
