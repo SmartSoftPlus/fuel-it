@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="en.lproj/Fuel-It-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="pl">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Fuel It</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>We need your location to show nearby petrol stations</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="en.lproj/Localizable.strings" source-language="en" target-language="pl" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.3" build-num="13E113"/>
+    </header>
+    <body>
+      <trans-unit id="%@ km" xml:space="preserve">
+        <source>%@ km</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="&gt;" xml:space="preserve">
+        <source>&gt;</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Add station" xml:space="preserve">
+        <source>Add station</source>
+        <target>Dodaj stację</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Best deals" xml:space="preserve">
+        <source>Best deals</source>
+        <target>Okazje</target>
+        <note>The best deals for fuel in the nearby</note>
+      </trans-unit>
+      <trans-unit id="Best fuel deals" xml:space="preserve">
+        <source>Best fuel deals</source>
+        <target>Okazje</target>
+        <note>Best fuel deals view button</note>
+      </trans-unit>
+      <trans-unit id="Brand" xml:space="preserve">
+        <source>Brand</source>
+        <target>Marka</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Buy us a gallon of petrol" xml:space="preserve">
+        <source>Buy us a gallon of petrol</source>
+        <target>Kup nam litr paliwa!</target>
+        <note>Asking for small donate</note>
+      </trans-unit>
+      <trans-unit id="Default fuel type" xml:space="preserve">
+        <source>Default fuel type</source>
+        <target>Domyślny typ paliwa</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Description" xml:space="preserve">
+        <source>Description</source>
+        <target>Opis</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Diesel" xml:space="preserve">
+        <source>Diesel</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Diesel price" xml:space="preserve">
+        <source>Diesel price</source>
+        <target>Cena Diesla</target>
+        <note>Oil fuel price</note>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target>Strona główna</target>
+        <note>Homepage</note>
+      </trans-unit>
+      <trans-unit id="LPG" xml:space="preserve">
+        <source>LPG</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="LPG price" xml:space="preserve">
+        <source>LPG price</source>
+        <target>Cena LPG</target>
+        <note>LPG fuel price</note>
+      </trans-unit>
+      <trans-unit id="Let me check that" xml:space="preserve">
+        <source>Let me check that</source>
+        <target>Już sprawdzam</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Mark as closed" xml:space="preserve">
+        <source>Mark as closed</source>
+        <target>Oznacz jako zamknięte</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="OK" xml:space="preserve">
+        <source>OK</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PB95" xml:space="preserve">
+        <source>PB95</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PB95 price" xml:space="preserve">
+        <source>PB95 price</source>
+        <target>Cena PB95</target>
+        <note>PB95 fuel price</note>
+      </trans-unit>
+      <trans-unit id="PB98" xml:space="preserve">
+        <source>PB98</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PB98 price" xml:space="preserve">
+        <source>PB98 price</source>
+        <target>Cena PB98</target>
+        <note>PB98 fuel price</note>
+      </trans-unit>
+      <trans-unit id="PLN" xml:space="preserve">
+        <source>PLN</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Settings" xml:space="preserve">
+        <source>Settings</source>
+        <target>Ustawienia</target>
+        <note>Settings button view
+   Settings panel name</note>
+      </trans-unit>
+      <trans-unit id="Something is missing in form" xml:space="preserve">
+        <source>Something is missing in form</source>
+        <target>Czegoś tutaj brakuje</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Station view radius" xml:space="preserve">
+        <source>Station view radius</source>
+        <target>Promień wyszukiwania stacji</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Submit" xml:space="preserve">
+        <source>Submit</source>
+        <target>Zatwierdź</target>
+        <note>Submit an action</note>
+      </trans-unit>
+      <trans-unit id="Successfully added station! Thank you for contributing" xml:space="preserve">
+        <source>Successfully added station! Thank you for contributing</source>
+        <target>Pomyślnie dodano stację! Dziękujemy za Twój wkład</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Update fuel prices" xml:space="preserve">
+        <source>Update fuel prices</source>
+        <target>Zaktualizuj ceny</target>
+        <note>Update fuel prices button</note>
+      </trans-unit>
+      <trans-unit id="Update prices" xml:space="preserve">
+        <source>Update prices</source>
+        <target>Zaktualizuj ceny</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
