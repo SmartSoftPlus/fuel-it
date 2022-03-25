@@ -48,7 +48,7 @@ struct NearbyView: View {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.black)
                                             Text(getProperStationName(bestDeals[2]))
-                                            Text("ON")
+                                            Text("Diesel")
                                             Text(String(bestDeals[2].oil))
                                             Text("PLN")
                                             Button {

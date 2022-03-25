@@ -45,7 +45,7 @@ struct SettingsView: View {
                 Picker("Default fuel type", selection: $defaultFuel) {
                     Text("PB95").tag(0)
                     Text("PB98").tag(1)
-                    Text("Oil").tag(2)
+                    Text("Diesel").tag(2)
                     Text("LPG").tag(3)
                 }
             }
