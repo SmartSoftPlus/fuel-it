@@ -12,6 +12,8 @@
 		AF0EC16227EDDC24002F7E7F /* pl.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16127EDDC24002F7E7F /* pl.xcloc */; };
 		AF0EC16427EDDCB8002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16327EDDCB8002F7E7F /* en.xcloc */; };
 		AF0EC16727EDDD2C002F7E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16527EDDD2C002F7E7F /* Localizable.strings */; };
+		AF0EC16B27EDF7A5002F7E7F /* pl.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16927EDF7A5002F7E7F /* pl.xcloc */; };
+		AF0EC16C27EDF7A5002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16A27EDF7A5002F7E7F /* en.xcloc */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		AF0EC16327EDDCB8002F7E7F /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = en.xcloc; path = "Fuel It/Views/Fuel It Localizations/en.xcloc"; sourceTree = "<group>"; };
 		AF0EC16627EDDD2C002F7E7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AF0EC16827EDDD5F002F7E7F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF0EC16927EDF7A5002F7E7F /* pl.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = pl.xcloc; path = "Fuel It Localizations/pl.xcloc"; sourceTree = "<group>"; };
+		AF0EC16A27EDF7A5002F7E7F /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = en.xcloc; path = "Fuel It Localizations/en.xcloc"; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				AFB8ADAA27D9453600EBB37B /* SettingsView.swift */,
 				AF0EC15E27ED0146002F7E7F /* AddStationView.swift */,
 				AFB8ADA827D9194300EBB37B /* HomeView.swift */,
+				AF0EC16A27EDF7A5002F7E7F /* en.xcloc */,
+				AF0EC16927EDF7A5002F7E7F /* pl.xcloc */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,9 +259,11 @@
 				AFB8AD9927D9111F00EBB37B /* Preview Assets.xcassets in Resources */,
 				AF0EC16227EDDC24002F7E7F /* pl.xcloc in Resources */,
 				AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */,
+				AF0EC16B27EDF7A5002F7E7F /* pl.xcloc in Resources */,
 				AF0EC16727EDDD2C002F7E7F /* Localizable.strings in Resources */,
 				AFE7E28827DD341C00D1EF15 /* data.txt in Resources */,
 				AF0EC16427EDDCB8002F7E7F /* en.xcloc in Resources */,
+				AF0EC16C27EDF7A5002F7E7F /* en.xcloc in Resources */,
 				AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
