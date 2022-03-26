@@ -27,7 +27,9 @@ func readFromFile() -> [PetrolStation] {
             let marksLocal = getLocalMarks(id: tmpStationObject.id)
             tmpStationObject.markedAsUnavailible = marks
             if marksLocal < 3 {
+                if !lineContents[1].contains("AUTOGAZ") && !lineContents[1].contains("LPG"){
                     tmpStations.append(tmpStationObject)
+                }
             }
         }
         

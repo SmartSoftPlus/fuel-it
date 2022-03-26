@@ -98,13 +98,16 @@ func getProperStationName(_ station: PetrolStation) -> String {
         return "Orlen"
     }
     if station.brand.contains("LUKOIL") {
-        return "Lukoil"
+        return "Amic"
     }
     if station.brand.contains("SHELL") {
         return "Shell"
     }
     if station.brand.contains("CIRCLE K") {
         return "Circle K"
+    }
+    if station.brand.contains("INTERMARCHE") {
+        return "Intermarche"
     }
     return station.brand
 }
