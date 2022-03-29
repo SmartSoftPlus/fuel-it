@@ -14,6 +14,8 @@
 		AF0EC16727EDDD2C002F7E7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16527EDDD2C002F7E7F /* Localizable.strings */; };
 		AF0EC16B27EDF7A5002F7E7F /* pl.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16927EDF7A5002F7E7F /* pl.xcloc */; };
 		AF0EC16C27EDF7A5002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16A27EDF7A5002F7E7F /* en.xcloc */; };
+		AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */; };
+		AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16F27F38607002F7E7F /* DataOperationController.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		AF0EC16827EDDD5F002F7E7F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AF0EC16927EDF7A5002F7E7F /* pl.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = pl.xcloc; path = "Fuel It Localizations/pl.xcloc"; sourceTree = "<group>"; };
 		AF0EC16A27EDF7A5002F7E7F /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = en.xcloc; path = "Fuel It Localizations/en.xcloc"; sourceTree = "<group>"; };
+		AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStationController.swift; sourceTree = "<group>"; };
+		AF0EC16F27F38607002F7E7F /* DataOperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationController.swift; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				AFB8AD9A27D9111F00EBB37B /* Persistence.swift */,
 				AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */,
 				AFB8AD9727D9111F00EBB37B /* Preview Content */,
+				AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */,
+				AF0EC16F27F38607002F7E7F /* DataOperationController.swift */,
 			);
 			path = "Fuel It";
 			sourceTree = "<group>";
@@ -269,10 +275,12 @@
 			files = (
 				AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */,
 				AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */,
+				AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
 				AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */,
 				AFE7E28527DD288500D1EF15 /* ReadData.swift in Sources */,
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
+				AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,

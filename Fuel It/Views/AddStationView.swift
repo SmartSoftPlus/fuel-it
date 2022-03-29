@@ -52,30 +52,3 @@ struct AddStationView: View {
         .padding()
     }
 }
-
-func addStation(brand: String, description: String) {
-    let uniqueID = UUID()
-    let userLocation = CLLocationManager().location?.coordinate
-    let longitude = userLocation?.longitude ?? 0.0
-    let latitude = userLocation?.latitude ?? 0.0
-    if longitude == 0.0, latitude == 0.0 {
-        return
-    }
-    Firestore.firestore().collection("newStations").document(uniqueID.description).setData([
-        "brand": brand,
-        "description": description,
-        "longitude": longitude,
-        "latitude": latitude,
-    ]) { err in
-        if let err = err {
-            print(err)
-        }
-    
-    }
-}
-
-//struct AddStationView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        AddStationView()
-//    }
-//}

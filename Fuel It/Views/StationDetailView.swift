@@ -50,9 +50,3 @@ struct StationDetailView: View {
     }
     
 }
-
-//struct StationDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StationDetailView(station: <#T##PetrolStation#>)
-//    }
-//}

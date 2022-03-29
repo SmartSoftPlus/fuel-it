@@ -105,23 +105,6 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
-
-func findArrayItem(petrolStationID: Int) -> Int{
-    var i = 0
-    for station in petrolStations {
-        if station.id == petrolStationID {
-            return i
-        }
-        i += 1
-    }
-    return 3000
-}
-
 final class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     var locationManager: CLLocationManager?
     
