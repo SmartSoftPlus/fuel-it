@@ -1,15 +1,19 @@
 //
-//  ReadData.swift
+//  DataOperationController.swift
 //  Fuel It
 //
-//  Created by Jakub Chojak on 12/03/2022.
+//  Created by Jakub Chojak on 29/03/2022.
 //
 
 import Foundation
-import SwiftUI
 import MapKit
+import SwiftUI
 
 var petrolStations: [PetrolStation] = readFromFile()
+
+/// #File operations#
+
+/// **You don't need to understand code down below, it's just magic**
 
 func readFromFile() -> [PetrolStation] {
     var tmpStations = [PetrolStation]()
@@ -27,7 +31,9 @@ func readFromFile() -> [PetrolStation] {
             let marksLocal = getLocalMarks(id: tmpStationObject.id)
             tmpStationObject.markedAsUnavailible = marks
             if marksLocal < 3 {
+                if !lineContents[1].contains("AUTOGAZ") && !lineContents[1].contains("LPG"){
                     tmpStations.append(tmpStationObject)
+                }
             }
         }
         
@@ -76,4 +82,14 @@ func getFuels(_ nums: String) -> [Bool] {
         }
     }
     return boolArr
+}
+
+
+func getDocumentsDirectory() -> URL {
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+    return paths[0]
+}
+
+func checkIfFileExist() -> Bool {
+    return true
 }

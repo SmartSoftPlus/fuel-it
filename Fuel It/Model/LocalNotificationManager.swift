@@ -36,8 +36,7 @@ class LocalNotificationManager: ObservableObject {
         let region = CLCircularRegion(center: coords, radius: 500.0, identifier: "petrolInTheNearby")
         region.notifyOnEntry = true
         let trigger = UNLocationNotificationTrigger(region: region, repeats: false)
-            //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(5), repeats: false)
-            let request = UNNotificationRequest(identifier: "petrolInTheNearby", content: content, trigger: trigger)
-            UNUserNotificationCenter.current().add(request)
+        let request = UNNotificationRequest(identifier: "petrolInTheNearby", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
         }
 }

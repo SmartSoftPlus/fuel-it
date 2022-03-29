@@ -32,6 +32,7 @@ struct StationDetailView: View {
                     HStack {
                         Label(LocalizedStringKey(String(station.lpg) + " PLN"), systemImage: "fuelpump.fill").accentColor(.blue)
                     }
+                    Text("ID: \(String(station.id))")
                 }
                 .padding()
                 
@@ -49,9 +50,3 @@ struct StationDetailView: View {
     }
     
 }
-
-//struct StationDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        StationDetailView(station: <#T##PetrolStation#>)
-//    }
-//}
