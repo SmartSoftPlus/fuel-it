@@ -25,7 +25,6 @@
 		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
-		AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */; };
 		AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */; };
 		AFE7E26C27DCBA1E00D1EF15 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26B27DCBA1E00D1EF15 /* FirebaseAuth */; };
 		AFE7E26E27DCBA1E00D1EF15 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26D27DCBA1E00D1EF15 /* FirebaseDatabase */; };
@@ -38,7 +37,6 @@
 		AFE7E27C27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27B27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta */; };
 		AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */; };
 		AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */; };
-		AFE7E28527DD288500D1EF15 /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28427DD288500D1EF15 /* ReadData.swift */; };
 		AFE7E28827DD341C00D1EF15 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E28727DD341C00D1EF15 /* data.txt */; };
 		AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */; };
 /* End PBXBuildFile section */
@@ -67,12 +65,10 @@
 		AFB8ADA827D9194300EBB37B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
-		AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveStationViewModel.swift; sourceTree = "<group>"; };
 		AFE7E25B27DCB18C00D1EF15 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
 		AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailView.swift; sourceTree = "<group>"; };
-		AFE7E28427DD288500D1EF15 /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
 		AFE7E28727DD341C00D1EF15 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.txt; path = ../../data.txt; sourceTree = "<group>"; };
 		AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFuelPricesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF0EC17127F386F3002F7E7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */,
+				AF0EC16F27F38607002F7E7F /* DataOperationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AFB8AD8527D9111F00EBB37B = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +136,7 @@
 				AFB8AD9A27D9111F00EBB37B /* Persistence.swift */,
 				AFB8AD9C27D9111F00EBB37B /* Fuel_It.xcdatamodeld */,
 				AFB8AD9727D9111F00EBB37B /* Preview Content */,
-				AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */,
-				AF0EC16F27F38607002F7E7F /* DataOperationController.swift */,
+				AF0EC17127F386F3002F7E7F /* Controller */,
 			);
 			path = "Fuel It";
 			sourceTree = "<group>";
@@ -175,8 +179,6 @@
 			children = (
 				AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */,
 				AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */,
-				AFDB5A7027DE4F57003C2A14 /* ObserveStationViewModel.swift */,
-				AFE7E28427DD288500D1EF15 /* ReadData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,14 +280,12 @@
 				AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
 				AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */,
-				AFE7E28527DD288500D1EF15 /* ReadData.swift in Sources */,
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
 				AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */,
-				AFDB5A7127DE4F57003C2A14 /* ObserveStationViewModel.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,
