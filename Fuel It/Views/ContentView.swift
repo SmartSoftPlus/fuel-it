@@ -26,8 +26,8 @@ struct ContentView: View {
                     if newPhase == .background {
                         let bestStationsInTheNearby = getBestPricesInNearby()
                         let chosenFuel = getFuelType()
-                        print(chosenFuel, bestStationsInTheNearby[chosenFuel])
-                        notificationManager.sendNotification(title: "Station", subtitle: nil, body: getProperStationName(bestStationsInTheNearby[chosenFuel]), coords: bestStationsInTheNearby[chosenFuel].locationCords)
+                        let body = "\(getProperStationName(bestStationsInTheNearby[chosenFuel])): \(bestStationsInTheNearby[chosenFuel].getProperFuelPrice(fuelType: chosenFuel))"
+                        notificationManager.sendNotification(title: "Station", subtitle: nil, body: body, coords: bestStationsInTheNearby[chosenFuel].locationCords)
                     }
                 }
             }
@@ -35,10 +35,3 @@ struct ContentView: View {
         }
     
     }
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

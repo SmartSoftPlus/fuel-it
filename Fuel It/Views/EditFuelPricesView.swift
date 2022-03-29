@@ -30,7 +30,7 @@ struct EditFuelPricesView: View {
                                 }
                     HStack {
                         Label("", systemImage: "fuelpump.fill").accentColor(.black)
-                        TextField(NSLocalizedString("Oil price", comment: "Oil fuel price"), value: $oilPrice, format: .number)
+                        TextField(NSLocalizedString("Diesel price", comment: "Oil fuel price"), value: $oilPrice, format: .number)
                                                         .keyboardType(.decimalPad)
                     }
                     HStack {
@@ -90,19 +90,3 @@ struct EditFuelPricesView: View {
         }
     }
 }
-
-func getDocumentsDirectory() -> URL {
-    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-    return paths[0]
-}
-
-func checkIfFileExist() -> Bool {
-    return true
-}
-
-//struct EditFuelPricesView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditFuelPricesView(station: <#PetrolStation#>)
-//    }
-//}
-
