@@ -118,7 +118,6 @@
 				AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */,
 				AF0EC16527EDDD2C002F7E7F /* Localizable.strings */,
 				AFE7E28727DD341C00D1EF15 /* data.txt */,
-				AFE7E28627DD289500D1EF15 /* Resources */,
 				AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */,
 				AFE7E26327DCB24D00D1EF15 /* Views */,
 				AFB8ADA427D9118300EBB37B /* Fuel It.entitlements */,
@@ -174,13 +173,6 @@
 				AFE7E28427DD288500D1EF15 /* ReadData.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		AFE7E28627DD289500D1EF15 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fuel It/Preview Content\"";
-				DEVELOPMENT_TEAM = FFX3AHD54N;
+				DEVELOPMENT_TEAM = W7V5567UDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fuel-It-Info.plist";
@@ -465,7 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fuel It/Preview Content\"";
-				DEVELOPMENT_TEAM = FFX3AHD54N;
+				DEVELOPMENT_TEAM = W7V5567UDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fuel-It-Info.plist";

@@ -32,6 +32,7 @@ struct StationDetailView: View {
                     HStack {
                         Label(LocalizedStringKey(String(station.lpg) + " PLN"), systemImage: "fuelpump.fill").accentColor(.blue)
                     }
+                    Text("ID: \(String(station.id))")
                 }
                 .padding()
                 
