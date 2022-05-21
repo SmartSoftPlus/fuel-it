@@ -26,7 +26,7 @@ struct ContentView: View {
                     if newPhase == .background {
                         let bestStationsInTheNearby = getBestPricesInNearby()
                         let chosenFuel = getFuelType()
-                        let body = "\(getProperStationName(bestStationsInTheNearby[chosenFuel])): \(bestStationsInTheNearby[chosenFuel].getProperFuelPrice(fuelType: chosenFuel))"
+                        let body = "\(getProperStationName(bestStationsInTheNearby[chosenFuel])): \(bestStationsInTheNearby[chosenFuel].getProperFuelPrice(fuelType: chosenFuel))zł"
                         notificationManager.sendNotification(title: "Station", subtitle: nil, body: body, coords: bestStationsInTheNearby[chosenFuel].locationCords)
                     }
                 }

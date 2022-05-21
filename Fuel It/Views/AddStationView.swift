@@ -17,8 +17,11 @@ struct AddStationView: View {
     @State var showErrorAlert = false
     var body: some View {
         VStack {
-            TextField(LocalizedStringKey("Brand"), text: $stationBrand)
-            TextField(LocalizedStringKey("Description"), text: $stationDescription)
+            VStack {
+                TextField(LocalizedStringKey("Brand"), text: $stationBrand)
+                TextField(LocalizedStringKey("Description"), text: $stationDescription)
+            }
+            .padding()            
             NavigationLink(isActive: $isActive) {
                 SettingsView(showNavBar: true)
             } label: {
