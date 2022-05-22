@@ -23,6 +23,7 @@
 		AF3C1FE9283625E3004C15D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */; };
 		AF3C1FEB283625E3004C15D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */; };
 		AF3C1FED283625E3004C15D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEC283625E3004C15D1 /* FirebaseStorage */; };
+		AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80848F283ABE6100F6B2DE /* CarPanelView.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStationController.swift; sourceTree = "<group>"; };
 		AF0EC16F27F38607002F7E7F /* DataOperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationController.swift; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AF80848F283ABE6100F6B2DE /* CarPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPanelView.swift; sourceTree = "<group>"; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
 		AFB8AD9327D9111F00EBB37B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
+				AF80848F283ABE6100F6B2DE /* CarPanelView.swift */,
 				AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */,
 				AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */,
 				AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */,
@@ -278,6 +281,7 @@
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
+				AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
 				AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */,
