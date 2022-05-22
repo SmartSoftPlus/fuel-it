@@ -16,6 +16,7 @@
 		AF0EC16C27EDF7A5002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16A27EDF7A5002F7E7F /* en.xcloc */; };
 		AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */; };
 		AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16F27F38607002F7E7F /* DataOperationController.swift */; };
+		AF21419428393199007490A0 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = AF21419328393199007490A0 /* HalfASheet */; };
 		AF3C1FE3283625E3004C15D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE2283625E3004C15D1 /* FirebaseAuth */; };
 		AF3C1FE5283625E3004C15D1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE4283625E3004C15D1 /* FirebaseDatabase */; };
 		AF3C1FE7283625E3004C15D1 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE6283625E3004C15D1 /* FirebaseDatabaseSwift */; };
@@ -78,6 +79,7 @@
 				AF3C1FEB283625E3004C15D1 /* FirebaseFirestoreSwift in Frameworks */,
 				AF3C1FE7283625E3004C15D1 /* FirebaseDatabaseSwift in Frameworks */,
 				AF3C1FE9283625E3004C15D1 /* FirebaseFirestore in Frameworks */,
+				AF21419428393199007490A0 /* HalfASheet in Frameworks */,
 				AF3C1FE5283625E3004C15D1 /* FirebaseDatabase in Frameworks */,
 				AF3C1FE3283625E3004C15D1 /* FirebaseAuth in Frameworks */,
 				AF3C1FED283625E3004C15D1 /* FirebaseStorage in Frameworks */,
@@ -200,6 +202,7 @@
 				AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */,
 				AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */,
 				AF3C1FEC283625E3004C15D1 /* FirebaseStorage */,
+				AF21419328393199007490A0 /* HalfASheet */,
 			);
 			productName = "Fuel It";
 			productReference = AFB8AD8E27D9111F00EBB37B /* Fuel It.app */;
@@ -232,6 +235,7 @@
 			mainGroup = AFB8AD8527D9111F00EBB37B;
 			packageReferences = (
 				AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */,
 			);
 			productRefGroup = AFB8AD8F27D9111F00EBB37B /* Products */;
 			projectDirPath = "";
@@ -503,6 +507,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -514,6 +526,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AF21419328393199007490A0 /* HalfASheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
 		AF3C1FE2283625E3004C15D1 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

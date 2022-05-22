@@ -28,6 +28,7 @@ class Fuel_ItAppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         FirebaseApp.configure()
+        let tabBarAppeareance = UITabBarAppearance()
         _ = CLLocationManager().location?.coordinate
         return true
     }

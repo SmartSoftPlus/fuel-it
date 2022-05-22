@@ -17,9 +17,10 @@ struct AddStationView: View {
     @State var showErrorAlert = false
     var body: some View {
         VStack {
-            VStack {
-                TextField(LocalizedStringKey("Brand"), text: $stationBrand)
-                TextField(LocalizedStringKey("Description"), text: $stationDescription)
+            Text(NSLocalizedString("Station will be added based on place you are currently in", comment: "Warn user about getting it's location")).foregroundColor(Color.red).multilineTextAlignment(.center)
+            VStack(spacing: 15) {
+                TextField(LocalizedStringKey("Brand"), text: $stationBrand).textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField(LocalizedStringKey("Description"), text: $stationDescription).textFieldStyle(RoundedBorderTextFieldStyle())
             }
             .padding()            
             NavigationLink(isActive: $isActive) {
@@ -38,7 +39,7 @@ struct AddStationView: View {
                 }
                 
             } label: {
-                Text("Add station")
+                Text("Add station").fontWeight(.bold)
             }
             .alert("Successfully added station! Thank you for contributing", isPresented: $showAlert) {
                 Button("OK", role: .cancel) {

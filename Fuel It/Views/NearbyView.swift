@@ -19,8 +19,8 @@ struct NearbyView: View {
                     if bestDeals[0].pb95 > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.green)
+                                            Text("PB95").fontWeight(.bold)
                                             Text(getProperStationName(bestDeals[0]))
-                                            Text("PB95")
                                             Text(String(bestDeals[0].pb95))
                                             Text("PLN")
                                             Button {
@@ -33,8 +33,8 @@ struct NearbyView: View {
                     if bestDeals[1].pb98 > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.mint)
+                                            Text("PB98").fontWeight(.bold)
                                             Text(getProperStationName(bestDeals[1]))
-                                            Text("PB98")
                                             Text(String(bestDeals[1].pb98))
                                             Text("PLN")
                                             Button {
@@ -47,8 +47,8 @@ struct NearbyView: View {
                     if bestDeals[2].oil > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.black)
+                                            Text("Diesel").fontWeight(.bold)
                                             Text(getProperStationName(bestDeals[2]))
-                                            Text("Diesel")
                                             Text(String(bestDeals[2].oil))
                                             Text("PLN")
                                             Button {
@@ -61,8 +61,8 @@ struct NearbyView: View {
                     if bestDeals[3].lpg > 0.0 {
                                         HStack {
                                             Label("", systemImage: "fuelpump.fill").accentColor(.blue)
+                                            Text("LPG").fontWeight(.bold)
                                             Text(getProperStationName(bestDeals[3]))
-                                            Text("LPG")
                                             Text(String(bestDeals[3].lpg))
                                             Text("PLN")
                                             Button {

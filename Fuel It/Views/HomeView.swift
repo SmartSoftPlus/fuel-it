@@ -7,20 +7,27 @@
 
 import SwiftUI
 import MapKit
+import HalfASheet
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
     @State var showNextView = false
     @State var actualStation: PetrolStation?
     @State var stationID = 0
+    @State var isShowing = false
+    @State var itemID = 0
     
     var body: some View {
             NavigationView {
+                ZStack {
             Map(coordinateRegion: .constant(viewModel.region), interactionModes: .all, showsUserLocation: true, annotationItems: petrolStations) {
                         item in
                         MapAnnotation(coordinate: item.locationCords) {
-                            NavigationLink(destination: StationDetailView(station: petrolStations[findArrayItem(petrolStationID: item.id)])){
-                                
+                            Button {
+                                itemID = item.id
+                                print(itemID)
+                                isShowing.toggle()
+                            } label: {
                                 if item.brand.contains("ORLEN") {
                                     Image("orlen")
                                         .resizable()
@@ -93,6 +100,7 @@ struct HomeView: View {
                             }
                         }
                     }
+            .accentColor(.blue)
                         .ignoresSafeArea(edges: .top)
                         .onAppear(perform: {
                             viewModel.checkIfLocationEnabled()
@@ -100,8 +108,18 @@ struct HomeView: View {
                                 getFuelPrice(id: petrolStation.id)
                             }
                         })
+                    HalfASheet(isPresented: $isShowing) {
+                        if itemID != 0 {
+                            StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
+                        }
+                        else {
+                            Text("Oops! Check your internet connection or try tapping another station")
+                        }
+                    }
+                    .height(.proportional(0.5))
             }
             .navigationBarHidden(true)
+            }
     }
 }
 

@@ -16,6 +16,7 @@ struct EditFuelPricesView: View {
     @State var pb98Price = 0.0
     @State var lpgPrice = 0.0
     @State var canSeeDismissButton = true
+    @State var showAlert = false
     
     var body: some View {
             VStack {
@@ -44,9 +45,6 @@ struct EditFuelPricesView: View {
                                                         .keyboardType(.decimalPad)
                     }
                 }
-                NavigationLink("", isActive: $isActive) {
-                    HomeView()
-                }
                 Button(NSLocalizedString("Submit", comment: "Submit an action")) {
                     var hasChanged = false
                     if pb95Price > 0.0 {
@@ -68,9 +66,13 @@ struct EditFuelPricesView: View {
                     if hasChanged {
                         isActive = station.updatePricesOnServer()
                     }
+                    showAlert.toggle()
+                }
+                .alert("Thanks for contributing!", isPresented: $showAlert) {
+                    Button("OK", role: .cancel) {
+                    }
                 }
             }
-            .padding()
             Spacer()
         .toolbar {
             if canSeeDismissButton {

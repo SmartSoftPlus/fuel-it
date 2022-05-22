@@ -10,6 +10,9 @@ import CoreData
 import MapKit
 
 struct ContentView: View {
+    init() {
+        //UITabBar.appearance().backgroundColor = UIColor(Color("launchScreenColorSet"))
+    }
     @Environment(\.scenePhase) var scenePhase
     @ObservedObject var notificationManager = LocalNotificationManager()
     var body: some View {
@@ -31,7 +34,6 @@ struct ContentView: View {
                     }
                 }
             }
-        
         }
     
     }
