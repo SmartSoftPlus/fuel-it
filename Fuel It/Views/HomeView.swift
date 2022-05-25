@@ -25,7 +25,6 @@ struct HomeView: View {
                         MapAnnotation(coordinate: item.locationCords) {
                             Button {
                                 itemID = item.id
-                                print(itemID)
                                 isShowing.toggle()
                             } label: {
                                 if item.brand.contains("ORLEN") {
@@ -113,15 +112,22 @@ struct HomeView: View {
                             StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
                         }
                         else {
-                            Text("Oops! Check your internet connection or try tapping another station")
+                            if itemID != 0 {
+                                StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
+                            }
+                            else {
+                                Text("Oops! Check your internet connection or try tapping another station")
+                            }
                         }
                     }
                     .height(.proportional(0.5))
+                    .backgroundColor(.systemBackground)
             }
             .navigationBarHidden(true)
             }
     }
 }
+
 
 final class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     var locationManager: CLLocationManager?

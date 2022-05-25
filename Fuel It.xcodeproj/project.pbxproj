@@ -33,6 +33,10 @@
 		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
+		AFC2BC18283D44DF005B04FC /* EditCarNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */; };
+		AFC2BC1A283D45BF005B04FC /* EditCarNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */; };
+		AFC2BC1C283D54C1005B04FC /* SetTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */; };
+		AFC2BC1E283D58B5005B04FC /* AddSpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */; };
 		AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */; };
 		AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */; };
 		AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */; };
@@ -65,6 +69,10 @@
 		AFB8ADA827D9194300EBB37B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarNameView.swift; sourceTree = "<group>"; };
+		AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarNameController.swift; sourceTree = "<group>"; };
+		AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTargetView.swift; sourceTree = "<group>"; };
+		AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpendingView.swift; sourceTree = "<group>"; };
 		AFE7E25B27DCB18C00D1EF15 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
@@ -96,6 +104,7 @@
 			children = (
 				AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */,
 				AF0EC16F27F38607002F7E7F /* DataOperationController.swift */,
+				AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +170,9 @@
 			children = (
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
 				AF80848F283ABE6100F6B2DE /* CarPanelView.swift */,
+				AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */,
+				AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */,
+				AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */,
 				AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */,
 				AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */,
 				AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */,
@@ -281,13 +293,17 @@
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
+				AFC2BC1C283D54C1005B04FC /* SetTargetView.swift in Sources */,
+				AFC2BC18283D44DF005B04FC /* EditCarNameView.swift in Sources */,
 				AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
+				AFC2BC1A283D45BF005B04FC /* EditCarNameController.swift in Sources */,
 				AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,
+				AFC2BC1E283D58B5005B04FC /* AddSpendingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
