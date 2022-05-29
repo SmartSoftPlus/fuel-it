@@ -19,10 +19,7 @@ struct EditFuelPricesView: View {
     @State var showAlert = false
     
     var body: some View {
-            VStack {
-                Text("Update prices")
-                    .font(.system(size: 20))
-                
+        VStack(spacing: 15) {
                 List {
                     HStack {
                                     Label("", systemImage: "fuelpump.fill").accentColor(.green)
@@ -72,20 +69,18 @@ struct EditFuelPricesView: View {
                     Button("OK", role: .cancel) {
                     }
                 }
-            }
-            Spacer()
-        .toolbar {
-            if canSeeDismissButton {
-                Button {
-                    canSeeDismissButton = false
-                    station.markedAsUnavailible += 1
-                    retrieveMarks(id: station.id)
-                    isActive = true
-                } label: {
-                    Text("Mark as closed")
+                if canSeeDismissButton {
+                    Button {
+                        canSeeDismissButton = false
+                        station.markedAsUnavailible += 1
+                        retrieveMarks(id: station.id)
+                        isActive = true
+                    } label: {
+                        Text("Mark as closed")
+                    }
                 }
             }
-        }
+            Spacer()
         .navigationBarHidden(!canSeeDismissButton)
         .onAppear() {
             getFuelPrice(id: station.id)

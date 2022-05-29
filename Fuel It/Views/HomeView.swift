@@ -16,6 +16,7 @@ struct HomeView: View {
     @State var stationID = 0
     @State var isShowing = false
     @State var itemID = 0
+    @State var doAnim = false
     
     var body: some View {
             NavigationView {
@@ -25,8 +26,8 @@ struct HomeView: View {
                         MapAnnotation(coordinate: item.locationCords) {
                             Button {
                                 itemID = item.id
-                                print(itemID)
-                                isShowing.toggle()
+                                print("InButton: \(itemID)")
+                                isShowing = true
                             } label: {
                                 if item.brand.contains("ORLEN") {
                                     Image("orlen")
@@ -100,6 +101,7 @@ struct HomeView: View {
                             }
                         }
                     }
+            .animation(.spring())
             .accentColor(.blue)
                         .ignoresSafeArea(edges: .top)
                         .onAppear(perform: {
@@ -108,20 +110,36 @@ struct HomeView: View {
                                 getFuelPrice(id: petrolStation.id)
                             }
                         })
-                    HalfASheet(isPresented: $isShowing) {
+                    HalfASheet(isPresented: $isShowing, title: itemID != 0 ? getProperStationName(petrolStations[findArrayItem(petrolStationID: itemID)]) : "") {
                         if itemID != 0 {
                             StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
                         }
                         else {
-                            Text("Oops! Check your internet connection or try tapping another station")
+                            if itemID != 0 {
+                                StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
+                            }
+                            else {
+                                Text("Oops! Check your internet connection or try tapping another station")
+                            }
                         }
                     }
                     .height(.proportional(0.5))
+                    .backgroundColor(.systemBackground)
             }
             .navigationBarHidden(true)
             }
+            .opacity(doAnim ? 1.0 : 0.0)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 0.7)) {
+                    doAnim = true
+                }
+            }
+            .onDisappear {
+                doAnim = false
+            }
     }
 }
+
 
 final class HomeViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     var locationManager: CLLocationManager?
