@@ -16,10 +16,6 @@ struct StationDetailView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    Text(getProperStationName(station))
-                        .bold()
-                        .font(.system(size: 20))
-                    
                             VStack(spacing: 15) {
                                 List {
                                     Label(LocalizedStringKey(String(station.pb95) + " PLN"), systemImage: "fuelpump.fill").accentColor(.green)

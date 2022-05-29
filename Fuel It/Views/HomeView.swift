@@ -25,7 +25,9 @@ struct HomeView: View {
                         MapAnnotation(coordinate: item.locationCords) {
                             Button {
                                 itemID = item.id
-                                isShowing.toggle()
+                                print("InButton: \(itemID)")
+                                isShowing = true
+                                    
                             } label: {
                                 if item.brand.contains("ORLEN") {
                                     Image("orlen")
@@ -107,7 +109,7 @@ struct HomeView: View {
                                 getFuelPrice(id: petrolStation.id)
                             }
                         })
-                    HalfASheet(isPresented: $isShowing) {
+                    HalfASheet(isPresented: $isShowing, title: itemID != 0 ? getProperStationName(petrolStations[findArrayItem(petrolStationID: itemID)]) : "") {
                         if itemID != 0 {
                             StationDetailView(station: petrolStations[findArrayItem(petrolStationID: itemID)])
                         }
@@ -120,7 +122,7 @@ struct HomeView: View {
                             }
                         }
                     }
-                    .height(.proportional(0.6))
+                    .height(.proportional(0.5))
                     .backgroundColor(.systemBackground)
             }
             .navigationBarHidden(true)
