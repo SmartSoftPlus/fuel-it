@@ -16,6 +16,14 @@
 		AF0EC16C27EDF7A5002F7E7F /* en.xcloc in Resources */ = {isa = PBXBuildFile; fileRef = AF0EC16A27EDF7A5002F7E7F /* en.xcloc */; };
 		AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */; };
 		AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0EC16F27F38607002F7E7F /* DataOperationController.swift */; };
+		AF21419428393199007490A0 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = AF21419328393199007490A0 /* HalfASheet */; };
+		AF3C1FE3283625E3004C15D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE2283625E3004C15D1 /* FirebaseAuth */; };
+		AF3C1FE5283625E3004C15D1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE4283625E3004C15D1 /* FirebaseDatabase */; };
+		AF3C1FE7283625E3004C15D1 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE6283625E3004C15D1 /* FirebaseDatabaseSwift */; };
+		AF3C1FE9283625E3004C15D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */; };
+		AF3C1FEB283625E3004C15D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */; };
+		AF3C1FED283625E3004C15D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEC283625E3004C15D1 /* FirebaseStorage */; };
+		AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80848F283ABE6100F6B2DE /* CarPanelView.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
 		AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB8AD9527D9111F00EBB37B /* Assets.xcassets */; };
@@ -25,16 +33,13 @@
 		AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADA827D9194300EBB37B /* HomeView.swift */; };
 		AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAA27D9453600EBB37B /* SettingsView.swift */; };
 		AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */; };
+		AFC2BC18283D44DF005B04FC /* EditCarNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */; };
+		AFC2BC1A283D45BF005B04FC /* EditCarNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */; };
+		AFC2BC1C283D54C1005B04FC /* SetTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */; };
+		AFC2BC1E283D58B5005B04FC /* AddSpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */; };
+		AFD65F69284388640050A47D /* CarHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD65F68284388640050A47D /* CarHistoryView.swift */; };
+		AFD65F6B284389F10050A47D /* CarHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD65F6A284389F10050A47D /* CarHistory.swift */; };
 		AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */; };
-		AFE7E26C27DCBA1E00D1EF15 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26B27DCBA1E00D1EF15 /* FirebaseAuth */; };
-		AFE7E26E27DCBA1E00D1EF15 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26D27DCBA1E00D1EF15 /* FirebaseDatabase */; };
-		AFE7E27027DCBA1E00D1EF15 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E26F27DCBA1E00D1EF15 /* FirebaseDatabaseSwift-Beta */; };
-		AFE7E27227DCBA1E00D1EF15 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27127DCBA1E00D1EF15 /* FirebaseFirestore */; };
-		AFE7E27427DCBA1E00D1EF15 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27327DCBA1E00D1EF15 /* FirebaseFirestoreCombine-Community */; };
-		AFE7E27627DCBA1E00D1EF15 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27527DCBA1E00D1EF15 /* FirebaseFirestoreSwift-Beta */; };
-		AFE7E27827DCBA1E00D1EF15 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27727DCBA1E00D1EF15 /* FirebaseStorage */; };
-		AFE7E27A27DCBA1E00D1EF15 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27927DCBA1E00D1EF15 /* FirebaseStorageCombine-Community */; };
-		AFE7E27C27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AFE7E27B27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta */; };
 		AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */; };
 		AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */; };
 		AFE7E28827DD341C00D1EF15 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E28727DD341C00D1EF15 /* data.txt */; };
@@ -53,6 +58,7 @@
 		AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStationController.swift; sourceTree = "<group>"; };
 		AF0EC16F27F38607002F7E7F /* DataOperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationController.swift; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AF80848F283ABE6100F6B2DE /* CarPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPanelView.swift; sourceTree = "<group>"; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel_ItApp.swift; sourceTree = "<group>"; };
 		AFB8AD9327D9111F00EBB37B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +71,12 @@
 		AFB8ADA827D9194300EBB37B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AFB8ADAA27D9453600EBB37B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyView.swift; sourceTree = "<group>"; };
+		AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarNameView.swift; sourceTree = "<group>"; };
+		AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarNameController.swift; sourceTree = "<group>"; };
+		AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTargetView.swift; sourceTree = "<group>"; };
+		AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpendingView.swift; sourceTree = "<group>"; };
+		AFD65F68284388640050A47D /* CarHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHistoryView.swift; sourceTree = "<group>"; };
+		AFD65F6A284389F10050A47D /* CarHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHistory.swift; sourceTree = "<group>"; };
 		AFE7E25B27DCB18C00D1EF15 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
@@ -78,15 +90,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE7E27027DCBA1E00D1EF15 /* FirebaseDatabaseSwift-Beta in Frameworks */,
-				AFE7E27227DCBA1E00D1EF15 /* FirebaseFirestore in Frameworks */,
-				AFE7E27A27DCBA1E00D1EF15 /* FirebaseStorageCombine-Community in Frameworks */,
-				AFE7E26E27DCBA1E00D1EF15 /* FirebaseDatabase in Frameworks */,
-				AFE7E27627DCBA1E00D1EF15 /* FirebaseFirestoreSwift-Beta in Frameworks */,
-				AFE7E27C27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta in Frameworks */,
-				AFE7E27827DCBA1E00D1EF15 /* FirebaseStorage in Frameworks */,
-				AFE7E27427DCBA1E00D1EF15 /* FirebaseFirestoreCombine-Community in Frameworks */,
-				AFE7E26C27DCBA1E00D1EF15 /* FirebaseAuth in Frameworks */,
+				AF3C1FEB283625E3004C15D1 /* FirebaseFirestoreSwift in Frameworks */,
+				AF3C1FE7283625E3004C15D1 /* FirebaseDatabaseSwift in Frameworks */,
+				AF3C1FE9283625E3004C15D1 /* FirebaseFirestore in Frameworks */,
+				AF21419428393199007490A0 /* HalfASheet in Frameworks */,
+				AF3C1FE5283625E3004C15D1 /* FirebaseDatabase in Frameworks */,
+				AF3C1FE3283625E3004C15D1 /* FirebaseAuth in Frameworks */,
+				AF3C1FED283625E3004C15D1 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +108,7 @@
 			children = (
 				AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */,
 				AF0EC16F27F38607002F7E7F /* DataOperationController.swift */,
+				AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +173,11 @@
 			isa = PBXGroup;
 			children = (
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
+				AF80848F283ABE6100F6B2DE /* CarPanelView.swift */,
+				AFD65F68284388640050A47D /* CarHistoryView.swift */,
+				AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */,
+				AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */,
+				AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */,
 				AFB8ADAC27D9475D00EBB37B /* NearbyView.swift */,
 				AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */,
 				AFE7E28927DD49DC00D1EF15 /* EditFuelPricesView.swift */,
@@ -179,6 +195,7 @@
 			children = (
 				AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */,
 				AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */,
+				AFD65F6A284389F10050A47D /* CarHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,15 +217,13 @@
 			);
 			name = "Fuel It";
 			packageProductDependencies = (
-				AFE7E26B27DCBA1E00D1EF15 /* FirebaseAuth */,
-				AFE7E26D27DCBA1E00D1EF15 /* FirebaseDatabase */,
-				AFE7E26F27DCBA1E00D1EF15 /* FirebaseDatabaseSwift-Beta */,
-				AFE7E27127DCBA1E00D1EF15 /* FirebaseFirestore */,
-				AFE7E27327DCBA1E00D1EF15 /* FirebaseFirestoreCombine-Community */,
-				AFE7E27527DCBA1E00D1EF15 /* FirebaseFirestoreSwift-Beta */,
-				AFE7E27727DCBA1E00D1EF15 /* FirebaseStorage */,
-				AFE7E27927DCBA1E00D1EF15 /* FirebaseStorageCombine-Community */,
-				AFE7E27B27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta */,
+				AF3C1FE2283625E3004C15D1 /* FirebaseAuth */,
+				AF3C1FE4283625E3004C15D1 /* FirebaseDatabase */,
+				AF3C1FE6283625E3004C15D1 /* FirebaseDatabaseSwift */,
+				AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */,
+				AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */,
+				AF3C1FEC283625E3004C15D1 /* FirebaseStorage */,
+				AF21419328393199007490A0 /* HalfASheet */,
 			);
 			productName = "Fuel It";
 			productReference = AFB8AD8E27D9111F00EBB37B /* Fuel It.app */;
@@ -240,7 +255,8 @@
 			);
 			mainGroup = AFB8AD8527D9111F00EBB37B;
 			packageReferences = (
-				AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */,
 			);
 			productRefGroup = AFB8AD8F27D9111F00EBB37B /* Products */;
 			projectDirPath = "";
@@ -276,19 +292,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */,
+				AFD65F6B284389F10050A47D /* CarHistory.swift in Sources */,
 				AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */,
+				AFD65F69284388640050A47D /* CarHistoryView.swift in Sources */,
 				AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
 				AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */,
 				AFB8ADAB27D9453600EBB37B /* SettingsView.swift in Sources */,
 				AF0EC17027F38607002F7E7F /* DataOperationController.swift in Sources */,
 				AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */,
+				AFC2BC1C283D54C1005B04FC /* SetTargetView.swift in Sources */,
+				AFC2BC18283D44DF005B04FC /* EditCarNameView.swift in Sources */,
+				AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */,
 				AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */,
 				AFE7E28A27DD49DC00D1EF15 /* EditFuelPricesView.swift in Sources */,
+				AFC2BC1A283D45BF005B04FC /* EditCarNameController.swift in Sources */,
 				AF0EC15F27ED0146002F7E7F /* AddStationView.swift in Sources */,
 				AFB8ADAD27D9475D00EBB37B /* NearbyView.swift in Sources */,
 				AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */,
 				AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */,
+				AFC2BC1E283D58B5005B04FC /* AddSpendingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fuel It/Preview Content\"";
-				DEVELOPMENT_TEAM = W7V5567UDD;
+				DEVELOPMENT_TEAM = FFX3AHD54N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fuel-It-Info.plist";
@@ -465,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fuel It/Preview Content\"";
-				DEVELOPMENT_TEAM = W7V5567UDD;
+				DEVELOPMENT_TEAM = FFX3AHD54N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fuel-It-Info.plist";
@@ -512,61 +535,59 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/franklynw/HalfASheet";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AFE7E26B27DCBA1E00D1EF15 /* FirebaseAuth */ = {
+		AF21419328393199007490A0 /* HalfASheet */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AF21419228393199007490A0 /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
+		AF3C1FE2283625E3004C15D1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		AFE7E26D27DCBA1E00D1EF15 /* FirebaseDatabase */ = {
+		AF3C1FE4283625E3004C15D1 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
 		};
-		AFE7E26F27DCBA1E00D1EF15 /* FirebaseDatabaseSwift-Beta */ = {
+		AF3C1FE6283625E3004C15D1 /* FirebaseDatabaseSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseDatabaseSwift-Beta";
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
 		};
-		AFE7E27127DCBA1E00D1EF15 /* FirebaseFirestore */ = {
+		AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		AFE7E27327DCBA1E00D1EF15 /* FirebaseFirestoreCombine-Community */ = {
+		AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
-		AFE7E27527DCBA1E00D1EF15 /* FirebaseFirestoreSwift-Beta */ = {
+		AF3C1FEC283625E3004C15D1 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		AFE7E27727DCBA1E00D1EF15 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = AF3C1FE1283625E3004C15D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
-		};
-		AFE7E27927DCBA1E00D1EF15 /* FirebaseStorageCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageCombine-Community";
-		};
-		AFE7E27B27DCBA1E00D1EF15 /* FirebaseStorageSwift-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AFE7E26A27DCBA1E00D1EF15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseStorageSwift-Beta";
 		};
 /* End XCSwiftPackageProductDependency section */
 

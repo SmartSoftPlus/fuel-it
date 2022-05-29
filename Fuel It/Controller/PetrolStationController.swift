@@ -67,9 +67,9 @@ func getRange() -> Double {
     catch {
         
     }
-    var retVal = 0.3
+    var retVal = 0.15
     if let fileData = data {
-        retVal = Double(fileData) ?? 0.3
+        retVal = Double(fileData) ?? 0.15
     }
     return retVal
 }
@@ -77,7 +77,7 @@ func getRange() -> Double {
 func openAppleMaps(_ station: PetrolStation) {
     let placemark = MKPlacemark(coordinate: station.locationCords)
     let mapItemToOpen = MKMapItem(placemark: placemark)
-    mapItemToOpen.name = station.brand
+    mapItemToOpen.name = getProperStationName(station)
     mapItemToOpen.openInMaps()
 }
 
@@ -96,6 +96,9 @@ func getProperStationName(_ station: PetrolStation) -> String {
     }
     if station.brand.contains("INTERMARCHE") {
         return "Intermarche"
+    }
+    if station.brand.contains("BP ") {
+        return "BP"
     }
     return station.brand
 }

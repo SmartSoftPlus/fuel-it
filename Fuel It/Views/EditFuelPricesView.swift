@@ -16,12 +16,10 @@ struct EditFuelPricesView: View {
     @State var pb98Price = 0.0
     @State var lpgPrice = 0.0
     @State var canSeeDismissButton = true
+    @State var showAlert = false
     
     var body: some View {
-            VStack {
-                Text("Update prices")
-                    .font(.system(size: 20))
-                
+        VStack(spacing: 15) {
                 List {
                     HStack {
                                     Label("", systemImage: "fuelpump.fill").accentColor(.green)
@@ -44,9 +42,6 @@ struct EditFuelPricesView: View {
                                                         .keyboardType(.decimalPad)
                     }
                 }
-                NavigationLink("", isActive: $isActive) {
-                    HomeView()
-                }
                 Button(NSLocalizedString("Submit", comment: "Submit an action")) {
                     var hasChanged = false
                     if pb95Price > 0.0 {
@@ -68,22 +63,24 @@ struct EditFuelPricesView: View {
                     if hasChanged {
                         isActive = station.updatePricesOnServer()
                     }
+                    showAlert.toggle()
+                }
+                .alert("Thanks for contributing!", isPresented: $showAlert) {
+                    Button("OK", role: .cancel) {
+                    }
+                }
+                if canSeeDismissButton {
+                    Button {
+                        canSeeDismissButton = false
+                        station.markedAsUnavailible += 1
+                        retrieveMarks(id: station.id)
+                        isActive = true
+                    } label: {
+                        Text("Mark as closed")
+                    }
                 }
             }
-            .padding()
             Spacer()
-        .toolbar {
-            if canSeeDismissButton {
-                Button {
-                    canSeeDismissButton = false
-                    station.markedAsUnavailible += 1
-                    retrieveMarks(id: station.id)
-                    isActive = true
-                } label: {
-                    Text("Mark as closed")
-                }
-            }
-        }
         .navigationBarHidden(!canSeeDismissButton)
         .onAppear() {
             getFuelPrice(id: station.id)
