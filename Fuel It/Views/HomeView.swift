@@ -120,7 +120,7 @@ struct HomeView: View {
                             }
                         }
                     }
-                    .height(.proportional(0.5))
+                    .height(.proportional(0.6))
                     .backgroundColor(.systemBackground)
             }
             .navigationBarHidden(true)

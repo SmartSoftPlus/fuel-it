@@ -29,6 +29,7 @@ struct NearbyView: View {
                                                 Label("", systemImage: "fuelpump.fill")
                                                     .foregroundColor(.green)
                                                     .font(.system(size: iconSize))
+                                                    .padding(.trailing, -19)
                                                 Text("PB95").fontWeight(.bold)
                                                 Text(getProperStationName(bestDeals[0]))
                                                 Text(String(bestDeals[0].pb95) + "zł")
@@ -36,6 +37,7 @@ struct NearbyView: View {
                                                     openAppleMaps(bestDeals[0])
                                                 } label: {
                                                     Label("", systemImage: "forward.fill")
+                                                        .padding(.trailing, -10)
                                                 }
                                             }
                             }
@@ -48,6 +50,7 @@ struct NearbyView: View {
                                                 Label("", systemImage: "fuelpump.fill")
                                                     .foregroundColor(.mint)
                                                     .font(.system(size: iconSize))
+                                                    .padding(.trailing, -19)
                                                 Text("PB98").fontWeight(.bold)
                                                 Text(getProperStationName(bestDeals[1]))
                                                 Text(String(bestDeals[1].pb98) + "zł")
@@ -55,6 +58,7 @@ struct NearbyView: View {
                                                     openAppleMaps(bestDeals[1])
                                                 } label: {
                                                     Label("", systemImage: "forward.fill")
+                                                        .padding(.trailing, -10)
                                                 }
                                             }
                                         }
@@ -69,6 +73,7 @@ struct NearbyView: View {
                                                 Label("", systemImage: "fuelpump.fill")
                                                     .foregroundColor(.black)
                                                     .font(.system(size: iconSize))
+                                                    .padding(.trailing, -19)
                                                 Text("Diesel").fontWeight(.bold)
                                                 Text(getProperStationName(bestDeals[2]))
                                                 Text(String(bestDeals[2].oil) + "zł")
@@ -76,6 +81,7 @@ struct NearbyView: View {
                                                     openAppleMaps(bestDeals[2])
                                                 } label: {
                                                     Label("", systemImage: "forward.fill")
+                                                        .padding(.trailing, -10)
                                                 }
                                             }
                             }
@@ -88,6 +94,7 @@ struct NearbyView: View {
                                                 Label("", systemImage: "fuelpump.fill")
                                                     .foregroundColor(.blue)
                                                     .font(.system(size: iconSize))
+                                                    .padding(.trailing, -19)
                                                 Text("LPG").fontWeight(.bold)
                                                 Text(getProperStationName(bestDeals[3]))
                                                 Text(String(bestDeals[3].lpg) + "zł")
@@ -95,6 +102,7 @@ struct NearbyView: View {
                                                     openAppleMaps(bestDeals[3])
                                                 } label: {
                                                     Label("", systemImage: "forward.fill")
+                                                        .padding(.trailing, -10)
                                                 }
                                             }
                                         }
