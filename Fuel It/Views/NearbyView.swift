@@ -12,6 +12,7 @@ struct NearbyView: View {
     
     @State var bestDeals = [PetrolStation]()
     @State var iconSize = 50.0
+    @State var showAnim = false
     
     var body: some View {
             VStack(spacing: 15) {
@@ -113,9 +114,16 @@ struct NearbyView: View {
                 
             }
             .padding()
+            .opacity(showAnim ? 1.0 : 0.0)
         .onAppear(perform: {
             bestDeals = getBestPricesInNearby()
+            withAnimation(.easeInOut(duration: 0.7)) {
+                showAnim = true
+            }
         })
+        .onDisappear() {
+            showAnim = false
+        }
     }
 
     

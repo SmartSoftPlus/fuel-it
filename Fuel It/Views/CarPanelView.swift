@@ -16,6 +16,7 @@ struct CarPanelView: View {
     @State var yearOfProduction = getProperYear()
     @State var carDistance = "-"
     @State var carName = getProperCarName()
+    @State var showAnim = false
     var body: some View {
         NavigationView {
             List {
@@ -66,8 +67,12 @@ struct CarPanelView: View {
                     Text("Set target")
                         .foregroundColor(.red)
                 }
-                Text("See history")
-                    .foregroundColor(.red)
+                NavigationLink {
+                    CarHistoryView()
+                } label: {
+                    Text("See history")
+                        .foregroundColor(.red)
+                }
                 NavigationLink {
                     AddSpendingView()
                 } label: {
@@ -86,6 +91,7 @@ struct CarPanelView: View {
             .navigationTitle(NSLocalizedString("My car", comment: "Car panel"))
             
         }
+        .opacity(showAnim ? 1.0 : 0.0)
         .navigationBarHidden(true)
         .onAppear {
             checkColor()
@@ -119,6 +125,12 @@ struct CarPanelView: View {
                 avgCostPer100KM = Double(costsSum / Double(distanceDiff / 100))
                 sliderValue = checkSlider()
             }
+            withAnimation(.easeInOut(duration: 0.7)) {
+                showAnim = true
+            }
+        }
+        .onDisappear {
+            showAnim = false
         }
     }
     func checkColor() {

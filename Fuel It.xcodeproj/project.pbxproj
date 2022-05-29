@@ -37,6 +37,8 @@
 		AFC2BC1A283D45BF005B04FC /* EditCarNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */; };
 		AFC2BC1C283D54C1005B04FC /* SetTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */; };
 		AFC2BC1E283D58B5005B04FC /* AddSpendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */; };
+		AFD65F69284388640050A47D /* CarHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD65F68284388640050A47D /* CarHistoryView.swift */; };
+		AFD65F6B284389F10050A47D /* CarHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD65F6A284389F10050A47D /* CarHistory.swift */; };
 		AFE7E26927DCB96500D1EF15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */; };
 		AFE7E27E27DCBED600D1EF15 /* PetrolStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */; };
 		AFE7E28227DD264E00D1EF15 /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7E28127DD264E00D1EF15 /* StationDetailView.swift */; };
@@ -73,6 +75,8 @@
 		AFC2BC19283D45BF005B04FC /* EditCarNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCarNameController.swift; sourceTree = "<group>"; };
 		AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTargetView.swift; sourceTree = "<group>"; };
 		AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpendingView.swift; sourceTree = "<group>"; };
+		AFD65F68284388640050A47D /* CarHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHistoryView.swift; sourceTree = "<group>"; };
+		AFD65F6A284389F10050A47D /* CarHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHistory.swift; sourceTree = "<group>"; };
 		AFE7E25B27DCB18C00D1EF15 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStation.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 			children = (
 				AFB8AD9327D9111F00EBB37B /* ContentView.swift */,
 				AF80848F283ABE6100F6B2DE /* CarPanelView.swift */,
+				AFD65F68284388640050A47D /* CarHistoryView.swift */,
 				AFC2BC1B283D54C1005B04FC /* SetTargetView.swift */,
 				AFC2BC1D283D58B5005B04FC /* AddSpendingView.swift */,
 				AFC2BC17283D44DF005B04FC /* EditCarNameView.swift */,
@@ -190,6 +195,7 @@
 			children = (
 				AF0EC12027E91D2E002F7E7F /* LocalNotificationManager.swift */,
 				AFE7E27D27DCBED600D1EF15 /* PetrolStation.swift */,
+				AFD65F6A284389F10050A47D /* CarHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB8ADA927D9194300EBB37B /* HomeView.swift in Sources */,
+				AFD65F6B284389F10050A47D /* CarHistory.swift in Sources */,
 				AFB8AD9E27D9111F00EBB37B /* Fuel_It.xcdatamodeld in Sources */,
+				AFD65F69284388640050A47D /* CarHistoryView.swift in Sources */,
 				AF0EC16E27F3853C002F7E7F /* PetrolStationController.swift in Sources */,
 				AFB8AD9B27D9111F00EBB37B /* Persistence.swift in Sources */,
 				AF0EC12127E91D2E002F7E7F /* LocalNotificationManager.swift in Sources */,

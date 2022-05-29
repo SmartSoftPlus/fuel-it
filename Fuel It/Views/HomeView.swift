@@ -16,6 +16,7 @@ struct HomeView: View {
     @State var stationID = 0
     @State var isShowing = false
     @State var itemID = 0
+    @State var doAnim = false
     
     var body: some View {
             NavigationView {
@@ -27,7 +28,6 @@ struct HomeView: View {
                                 itemID = item.id
                                 print("InButton: \(itemID)")
                                 isShowing = true
-                                    
                             } label: {
                                 if item.brand.contains("ORLEN") {
                                     Image("orlen")
@@ -101,6 +101,7 @@ struct HomeView: View {
                             }
                         }
                     }
+            .animation(.spring())
             .accentColor(.blue)
                         .ignoresSafeArea(edges: .top)
                         .onAppear(perform: {
@@ -126,6 +127,15 @@ struct HomeView: View {
                     .backgroundColor(.systemBackground)
             }
             .navigationBarHidden(true)
+            }
+            .opacity(doAnim ? 1.0 : 0.0)
+            .onAppear {
+                withAnimation(.easeInOut(duration: 0.7)) {
+                    doAnim = true
+                }
+            }
+            .onDisappear {
+                doAnim = false
             }
     }
 }

@@ -14,6 +14,7 @@ struct SettingsView: View {
     @State var sliderValue = petrolStationsRange
     @State var defaultFuel = getFuelType()
     @State var showNavBar = true
+    @State var showAnim = false
     var body: some View {
         ZStack {
         NavigationView {
@@ -53,6 +54,12 @@ struct SettingsView: View {
                     
             .navigationTitle(NSLocalizedString("Settings", comment: "Settings panel name"))
         }
+        .opacity(showAnim ? 1.0 : 0.0)
+        .onAppear(perform: {
+            withAnimation(.easeInOut(duration: 0.7)) {
+                showAnim = true
+            }
+        })
         .navigationBarHidden(true)
         .onDisappear() {
             //save fuel type to file
@@ -64,6 +71,7 @@ struct SettingsView: View {
             catch {
                 
             }
+            showAnim = false
         }
         }
     }
