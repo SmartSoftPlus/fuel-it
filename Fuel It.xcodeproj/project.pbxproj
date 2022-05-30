@@ -23,6 +23,7 @@
 		AF3C1FE9283625E3004C15D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FE8283625E3004C15D1 /* FirebaseFirestore */; };
 		AF3C1FEB283625E3004C15D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEA283625E3004C15D1 /* FirebaseFirestoreSwift */; };
 		AF3C1FED283625E3004C15D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AF3C1FEC283625E3004C15D1 /* FirebaseStorage */; };
+		AF4569A72844C93C005364A7 /* Fuel-It-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF4569A52844C93C005364A7 /* Fuel-It-InfoPlist.strings */; };
 		AF808490283ABE6200F6B2DE /* CarPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80848F283ABE6100F6B2DE /* CarPanelView.swift */; };
 		AFB8AD9227D9111F00EBB37B /* Fuel_ItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9127D9111F00EBB37B /* Fuel_ItApp.swift */; };
 		AFB8AD9427D9111F00EBB37B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8AD9327D9111F00EBB37B /* ContentView.swift */; };
@@ -57,6 +58,8 @@
 		AF0EC16A27EDF7A5002F7E7F /* en.xcloc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = en.xcloc; path = "Fuel It Localizations/en.xcloc"; sourceTree = "<group>"; };
 		AF0EC16D27F3853C002F7E7F /* PetrolStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolStationController.swift; sourceTree = "<group>"; };
 		AF0EC16F27F38607002F7E7F /* DataOperationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperationController.swift; sourceTree = "<group>"; };
+		AF4569A42844C290005364A7 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF4569A62844C93C005364A7 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = "pl.lproj/Fuel-It-InfoPlist.strings"; sourceTree = "<group>"; };
 		AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fuel-It-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AF80848F283ABE6100F6B2DE /* CarPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPanelView.swift; sourceTree = "<group>"; };
 		AFB8AD8E27D9111F00EBB37B /* Fuel It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fuel It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5AA93D27E4DAC40055F79B /* Fuel-It-Info.plist */,
+				AF4569A52844C93C005364A7 /* Fuel-It-InfoPlist.strings */,
 				AF0EC16527EDDD2C002F7E7F /* Localizable.strings */,
 				AFE7E28727DD341C00D1EF15 /* data.txt */,
 				AFE7E26827DCB96500D1EF15 /* GoogleService-Info.plist */,
@@ -252,6 +256,7 @@
 				en,
 				Base,
 				pl,
+				uk,
 			);
 			mainGroup = AFB8AD8527D9111F00EBB37B;
 			packageReferences = (
@@ -272,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4569A72844C93C005364A7 /* Fuel-It-InfoPlist.strings in Resources */,
 				AFB8AD9927D9111F00EBB37B /* Preview Assets.xcassets in Resources */,
 				AF0EC16227EDDC24002F7E7F /* pl.xcloc in Resources */,
 				AFB8AD9627D9111F00EBB37B /* Assets.xcassets in Resources */,
@@ -323,8 +329,18 @@
 			children = (
 				AF0EC16627EDDD2C002F7E7F /* en */,
 				AF0EC16827EDDD5F002F7E7F /* pl */,
+				AF4569A42844C290005364A7 /* uk */,
 			);
 			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AF4569A52844C93C005364A7 /* Fuel-It-InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4569A62844C93C005364A7 /* pl */,
+			);
+			name = "Fuel-It-InfoPlist.strings";
 			path = ..;
 			sourceTree = "<group>";
 		};

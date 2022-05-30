@@ -1,7 +1,16 @@
 /* No comment provided by engineer. */
+"Add spending" = "Dodaj wydatek";
+
+/* No comment provided by engineer. */
 "Add station" = "Dodaj stację";
 
-/* The best deals for fuel in the nearby */
+/* No comment provided by engineer. */
+"Avg. 100km cost: " = "Średni koszt 100km: ";
+
+/* No comment provided by engineer. */
+"Avg. fuel consumption: " = "Średnie zużycie paliwa: ";
+
+/* No comment provided by engineer. */
 "Best deals" = "Okazje";
 
 /* Best fuel deals view button */
@@ -10,32 +19,89 @@
 /* No comment provided by engineer. */
 "Brand" = "Marka";
 
+/* Asking for small donate */
+"Buy us a gallon of petrol" = "Kup nam litr paliwa!";
+
+/* No comment provided by engineer. */
+"Car history" = "Historia pojazdu";
+
+/* No comment provided by engineer. */
+"Car name" = "Nazwa pojazdu";
+
+/* No comment provided by engineer. */
+"Clear spendings" = "Wyczyść bieżące wydatki";
+
 /* No comment provided by engineer. */
 "Default fuel type" = "Domyślny typ paliwa";
 
 /* No comment provided by engineer. */
 "Description" = "Opis";
 
+/* No comment provided by engineer. */
+"Diesel" = "Diesel";
+
 /* Oil fuel price */
 "Diesel price" = "Cena Diesla";
 
-/* Homepage */
-"Home" = "Strona główna";
+/* No comment provided by engineer. */
+"Distance on meter" = "Stan licznika";
+
+/* No comment provided by engineer. */
+"Distance: " = "Odległość: ";
+
+/* No comment provided by engineer. */
+"Edit car properties" = "Edytuj dane auta";
 
 /* No comment provided by engineer. */
 "Let me check that" = "Już sprawdzam";
 
+/* No comment provided by engineer. */
+"Litre cost" = "Koszt litra paliwa";
+
+/* No comment provided by engineer. */
+"Litres you refueled" = "Zatankowane paliwo w litrach";
+
+/* No comment provided by engineer. */
+"LPG" = "LPG";
+
 /* LPG fuel price */
 "LPG price" = "Cena LPG";
+
+/* Map */
+"Map" = "Mapa";
 
 /* No comment provided by engineer. */
 "Mark as closed" = "Oznacz jako zamknięte";
 
+/* Car panel */
+"My car" = "Mój pojazd";
+
+/* No comment provided by engineer. */
+"Oops! Check your internet connection or try tapping another station" = "Napotkaliśmy problem! Sprawdź połączenie z internetem";
+
+/* No comment provided by engineer. */
+"PB95" = "PB95";
+
 /* PB95 fuel price */
 "PB95 price" = "Cena PB95";
 
+/* No comment provided by engineer. */
+"PB98" = "PB98";
+
 /* PB98 fuel price */
 "PB98 price" = "Cena PB98";
+
+/* No comment provided by engineer. */
+"Production year" = "Rok produkcji";
+
+/* No comment provided by engineer. */
+"See history" = "Pokaż historię pojazdu";
+
+/* No comment provided by engineer. */
+"Set target" = "Ustaw cel wydatków";
+
+/* No comment provided by engineer. */
+"Set your target for all car costs" = "Ustaw bieżący cel wydatków";
 
 /* Settings button view
    Settings panel name */
@@ -47,18 +113,27 @@
 /* No comment provided by engineer. */
 "Station view radius" = "Promień wyszukiwania stacji";
 
+/* Warn user about getting it's location */
+"Station will be added based on place you are currently in" = "Stacja zostanie dodana na podstawie twojej obecnej lokalizacji";
+
 /* Submit an action */
 "Submit" = "Zatwierdź";
 
 /* No comment provided by engineer. */
 "Successfully added station! Thank you for contributing" = "Pomyślnie dodano stację! Dziękujemy za Twój wkład";
 
+/* No comment provided by engineer. */
+"Target" = "Cel";
+
+/* No comment provided by engineer. */
+"Thanks for contributing!" = "Dziękujemy za wspomożenie rozwoju aplikacji!";
+
+/* No comment provided by engineer. */
+"Total amount spend" = "Bieżące wydatki";
+
+/* No comment provided by engineer. */
+"Total spendings:" = "Całkowite wydatki: ";
+
 /* Update fuel prices button */
 "Update fuel prices" = "Zaktualizuj ceny";
-
-/* No comment provided by engineer. */
-"Update prices" = "Zaktualizuj ceny";
-
-/* No comment provided by engineer. */
-"Buy us a gallon of petrol" = "Kup nam litr paliwa!";
 
